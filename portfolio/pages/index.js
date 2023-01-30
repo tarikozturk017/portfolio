@@ -2,7 +2,16 @@ import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import Image from 'next/image';
+import HoverBox from './components/HoverBox';
+
+// import images
 import tarikPic from "../public/tarik-pic.png"
+import reasype from "../public/reasype.gif"
+import staticReasype from "../public/staticReasype.jpg"
+import planetBlue from "../public/planetBlue.png"
+import planetBlueGif from "../public/planetblue.gif"
+import speedTyping from "../public/speedTyping.png"
+import speedTypingGif from "../public/speedtyping.gif"
 
 export default function Home() {
   return (
@@ -47,8 +56,54 @@ export default function Home() {
             </div>
         </section>
 
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Projects</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              Hover over images to play animated demo
+            </p>
+          </div>
+          <div>
+            
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              {/* <Image src={tarikPic} width={100} height={100} /> */}
+              <HoverBox static={staticReasype} playGif={reasype} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Reasype
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs following core
+                design theory.
+              </p>
+              
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <HoverBox static={planetBlue} playGif={planetBlueGif} />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">
+                Code your dream project
+              </h3>
+              <p className="py-2">
+                Do you have an idea for your next great website? Let's make it a
+                reality.
+              </p>
+              
+              
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <HoverBox static={speedTyping} playGif={speedTypingGif} />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <p className="py-2">
+                Are you interested in feedback for your current project? I can
+                give you tips and tricks to level it up.
+              </p>
+            
+            </div>
+          </div>
 
-        
+          </div>
+        </section>
+
       </main>
     </div>
   );
