@@ -12,7 +12,7 @@ import SendForm from "./SendForm";
 
 const Footer = () => {
 return (
-	<Box style={{ 
+	<Box className="clear-both relative" style={{ 
         clear: "both",
         position: "relative",
         
@@ -49,7 +49,7 @@ return (
             <FooterLink href="https://github.com/tarikozturk017">
             <div className="flex items-center">
                 <AiFillGithub />
-				<span style={{ marginLeft: "10px" }}>
+				<span className=" ml-3" >
 				    Github
 				</span>
             </div>
@@ -57,7 +57,7 @@ return (
 			<FooterLink href="https://www.linkedin.com/in/tarik-ozturk-28b050159/">
             <div className="flex items-center">
                 <AiFillLinkedin />
-				<span style={{ marginLeft: "10px" }}>
+				<span className=" ml-3" >
 				    LinkedIn
 				</span>
             </div>
@@ -65,7 +65,7 @@ return (
 			<FooterLink href="https://twitter.com/tarikozturk017">
             <div className="flex items-center">
                 <AiFillTwitterCircle />
-				<span style={{ marginLeft: "10px" }}>
+				<span className=" ml-3" >
 				    Twitter
 				</span>
             </div>
@@ -74,10 +74,9 @@ return (
 		</Column>
 		</Row>
 	</Container>
-    <h1 style={{ color: "#009688",
-				textAlign: "center",
-				marginTop: "+50px" }}>
-		<small>&copy; 2023 | Created by Tarik Ozturk</small>
+    <h1 className="mt-5" style={{ color: "#009688",
+				textAlign: "center" }}>
+		<small className="font-burtons">&copy; 2023 | Created by Tarik Ozturk</small>
 	</h1>
 	</Box>
 );
