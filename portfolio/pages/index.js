@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Carousel from "react-elastic-carousel";
 import HoverBox from './components/HoverBox';
 import Footer from './components/Footer';
+// import SendForm from './components/SendForm';
 
 
 // import images
@@ -218,6 +219,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      {/* <SendForm /> */}
       <Footer />
     </div>
   );

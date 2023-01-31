@@ -8,6 +8,7 @@ FooterLink,
 Heading,
 } from "./FooterStyles";
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import SendForm from "./SendForm";
 
 const Footer = () => {
 return (
@@ -20,26 +21,29 @@ return (
 	
 	<Container>
 		<Row>
-		<Column>
-			<Heading>About Us</Heading>
-			<FooterLink href="#">Aim</FooterLink>
-			<FooterLink href="#">Vision</FooterLink>
-			<FooterLink href="#">Testimonials</FooterLink>
-		</Column>
-		<Column>
+		
+		{/* <Column>
 			<Heading>Services</Heading>
 			<FooterLink href="#">Writing</FooterLink>
 			<FooterLink href="#">Internships</FooterLink>
 			<FooterLink href="#">Coding</FooterLink>
 			<FooterLink href="#">Teaching</FooterLink>
-		</Column>
+		</Column> */}
 		<Column>
-			<Heading>Contact Us</Heading>
-			<FooterLink href="#">Uttar Pradesh</FooterLink>
-			<FooterLink href="#">Ahemdabad</FooterLink>
-			<FooterLink href="#">Indore</FooterLink>
-			<FooterLink href="#">Mumbai</FooterLink>
+        <Heading>Contact Me</Heading>
+			<SendForm />
 		</Column>
+        <Column>
+        
+		</Column>
+
+        <Column>
+			<Heading>About Us</Heading>
+			<FooterLink href="#">Aim</FooterLink>
+			<FooterLink href="#">Vision</FooterLink>
+			<FooterLink href="#">Testimonials</FooterLink>
+		</Column>
+
 		<Column>
 			<Heading>Social</Heading>
             <FooterLink href="https://github.com/tarikozturk017">
