@@ -18,7 +18,7 @@ const SendForm = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail} >
-      <h2 className=' text-white mb-5 text-xl'>Name</h2>
+      <h2 className=' text-white mb-2 mt-4 text-xl'>Name</h2>
       <input className="
         form-control
         block
@@ -36,8 +36,8 @@ const SendForm = () => {
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
       " type="text" name="user_name" autoComplete='off'/>
-      &nbsp
-      <h2 className=' text-white mb-5 text-xl'>Message</h2>
+      {/* &nbsp */}
+      <h2 className=' text-white mb-2 mt-4 text-xl'>Message</h2>
       {/* <textarea className=' indent-2 p-2' name="message" style={{ backgroundColor: "#8C92AC", borderRadius: "8px", height: "15rem", width: "25rem"}} autocomplete="off"/> */}
       <textarea
       className="

@@ -31,10 +31,16 @@ import calculator from "../public/calculator.png"
 import calculatorGif from "../public/calculator.gif"
 import quoteGenerator from "../public/quote-generator.png"
 import quoteGeneratorGif from "../public/quote-generator.gif"
+import projectData from "./components/data"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [expendList, setExpendList] = useState(false);
+
+  let data = projectData;
+  
+  // console.log(data[0].technologies[1]);
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>

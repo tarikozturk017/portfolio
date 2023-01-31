@@ -21,14 +21,7 @@ return (
 	
 	<Container>
 		<Row>
-		
-		{/* <Column>
-			<Heading>Services</Heading>
-			<FooterLink href="#">Writing</FooterLink>
-			<FooterLink href="#">Internships</FooterLink>
-			<FooterLink href="#">Coding</FooterLink>
-			<FooterLink href="#">Teaching</FooterLink>
-		</Column> */}
+
 		<Column>
         <Heading>Contact Me</Heading>
 			<SendForm />
@@ -74,7 +67,7 @@ return (
 		</Column>
 		</Row>
 	</Container>
-    <h1 className="mt-5" style={{ color: "#009688",
+    <h1 className="mt-5" style={{ color: "white",
 				textAlign: "center" }}>
 		<small className="font-burtons">&copy; 2023 | Created by Tarik Ozturk</small>
 	</h1>
