@@ -19,10 +19,48 @@ const SendForm = () => {
   return (
     <form ref={form} onSubmit={sendEmail} >
       <h2 className=' text-white mb-5 text-xl'>Name</h2>
-      <input type="text" name="user_name" style={{ backgroundColor: "#8C92AC", borderRadius: "8px", height: "2rem"}} autocomplete="off"/>
+      <input className="
+        form-control
+        block
+        w-52 
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+      " type="text" name="user_name" autoComplete='off'/>
       &nbsp
       <h2 className=' text-white mb-5 text-xl'>Message</h2>
-      <textarea name="message" style={{ backgroundColor: "#8C92AC", borderRadius: "8px", height: "15rem", width: "25rem"}} autocomplete="off"/>
+      {/* <textarea className=' indent-2 p-2' name="message" style={{ backgroundColor: "#8C92AC", borderRadius: "8px", height: "15rem", width: "25rem"}} autocomplete="off"/> */}
+      <textarea
+      className="
+        form-control
+        block
+        w-52 md:w-64 lg:w-80
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+      "
+      name="message"
+      rows="5"
+      placeholder="Your message"
+    ></textarea>
       <input className=' cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 mt-2 rounded-md ml-8' type="submit" value="Send"  />
     </form>
   );
