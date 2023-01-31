@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import Image from 'next/image';
+import Carousel from "react-elastic-carousel";
 import HoverBox from './components/HoverBox';
 
 // import images
@@ -12,6 +13,18 @@ import planetBlue from "../public/planetBlue.png"
 import planetBlueGif from "../public/planetblue.gif"
 import speedTyping from "../public/speedTyping.png"
 import speedTypingGif from "../public/speedtyping.gif"
+import memeGenerator from "../public/memeGenerator.png"
+import memeGeneratorGif from "../public/meme-generator.gif"
+import trivia from "../public/trivia.png"
+import triviaGif from "../public/trivia.gif"
+import pomodoro from "../public/pomodoro.png"
+import pomodoroGif from "../public/pomodoro.gif"
+import tenzies from "../public/tenzies.png"
+import tenziesGif from "../public/tenzies.gif"
+import calculator from "../public/calculator.png"
+import calculatorGif from "../public/calculator.gif"
+import quoteGenerator from "../public/quote-generator.png"
+import quoteGeneratorGif from "../public/quote-generator.gif"
 
 export default function Home() {
   return (
@@ -65,6 +78,16 @@ export default function Home() {
           </div>
           <div>
             
+          
+
+          </div>
+        </section>
+
+
+        <section>
+        <Carousel>
+          <div>
+            {/* FIRST */}
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               {/* <Image src={tarikPic} width={100} height={100} /> */}
@@ -100,10 +123,89 @@ export default function Home() {
             
             </div>
           </div>
-
+            </div>
+              <div>
+                {/* SECOND */}
+              <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              {/* <Image src={tarikPic} width={100} height={100} /> */}
+              <HoverBox static={memeGenerator} playGif={memeGeneratorGif} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Reasype
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs following core
+                design theory.
+              </p>
+              
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <HoverBox static={trivia} playGif={triviaGif} />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">
+                Code your dream project
+              </h3>
+              <p className="py-2">
+                Do you have an idea for your next great website? Let's make it a
+                reality.
+              </p>
+              
+              
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <HoverBox static={pomodoro} playGif={pomodoroGif} />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <p className="py-2">
+                Are you interested in feedback for your current project? I can
+                give you tips and tricks to level it up.
+              </p>
+            
+            </div>
           </div>
+              </div>
+              <div>
+               {/* THIRD */}
+               <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              {/* <Image src={tarikPic} width={100} height={100} /> */}
+              <HoverBox static={tenzies} playGif={tenziesGif} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Reasype
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs following core
+                design theory.
+              </p>
+              
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <HoverBox static={calculator} playGif={calculatorGif} />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">
+                Code your dream project
+              </h3>
+              <p className="py-2">
+                Do you have an idea for your next great website? Let's make it a
+                reality.
+              </p>
+              
+              
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <HoverBox static={quoteGenerator} playGif={quoteGeneratorGif} />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <p className="py-2">
+                Are you interested in feedback for your current project? I can
+                give you tips and tricks to level it up.
+              </p>
+            
+            </div>
+          </div>
+              </div>
+              <div>
+              <Image src={tarikPic}/>
+                  <p className="legend">Image 4</p>
+              </div>
+          </Carousel>
         </section>
-
       </main>
     </div>
   );
