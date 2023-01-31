@@ -4,6 +4,8 @@ import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import Image from 'next/image';
 import Carousel from "react-elastic-carousel";
 import HoverBox from './components/HoverBox';
+import Footer from './components/Footer';
+
 
 // import images
 import tarikPic from "../public/tarik-pic.png"
@@ -49,7 +51,7 @@ export default function Home() {
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium'>Tarik Ozturk</h2>
-            <h3 className='text-2xl py-2'>Developer</h3>
+            <h3 className='text-2xl py-2'>Software Developer </h3>
             <p className='text-md py-5 leading-8 text-gray-800'>Hi, I am a developer with a passion for creating efficient solutions to complex problems. 
               My interest in solving problems developed through life science while studying for my B.S. in 
               Physiotherapy and Rehabilitation. Then I started learning programming as a hobby, which led a 
@@ -60,9 +62,9 @@ export default function Home() {
               daily health and everyday life.</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 text-gray-600'>
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillGithub />
+          <a href="https://twitter.com/tarikozturk017"><AiFillTwitterCircle /></a>
+            <a href="https://www.linkedin.com/in/tarik-ozturk-28b050159/"><AiFillLinkedin /></a>
+            <a href="https://github.com/tarikozturk017"><AiFillGithub /></a> 
           </div>
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-84 md:w-84">
               <Image src={tarikPic} layout="fill" objectFit="cover" />
@@ -206,7 +208,17 @@ export default function Home() {
               </div>
           </Carousel>
         </section>
+        
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Projects</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              Hover over images to play animated demo
+            </p>
+          </div>
+        </section>
       </main>
+      <Footer />
     </div>
   );
 }
