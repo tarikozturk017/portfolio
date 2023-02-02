@@ -31,14 +31,15 @@ return (
 		</Column>
 
         <Column>
-			<Heading>About Us</Heading>
-			<FooterLink href="#">Aim</FooterLink>
-			<FooterLink href="#">Vision</FooterLink>
-			<FooterLink href="#">Testimonials</FooterLink>
+			<Heading>About</Heading>
+			<FooterLink href="#">Blogs</FooterLink>
+			<FooterLink href="#">Courses | Certificate</FooterLink>
+			<FooterLink href="#">Seneca Software Developers Club </FooterLink>
+			<FooterLink href="https://github.com/tarikozturk017/SLG-practices">SLG Workshops</FooterLink>
 		</Column>
 
 		<Column>
-			<Heading>Social</Heading>
+			<Heading className="">Social</Heading>
             <FooterLink href="https://github.com/tarikozturk017">
             <div className="flex items-center">
                 <AiFillGithub />

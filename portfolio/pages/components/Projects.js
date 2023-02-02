@@ -1,12 +1,15 @@
 const Projects = () => {
   
   return (
-
+        <div>
+          <div className=" flex justify-around">
+          <h3 className="text-xl font-medium  dark:text-gray-200">List of My Projects</h3>
+          <h3 className="text-xl font-medium  dark:text-gray-200">Project Details</h3>
+          </div>
         <div className="w-auto lg:flex gap-10">
             
-
             <div className="text-center lg:flex p-10 rounded-xl my-10 flex-1 dark:text-gray-200">
-                <div className=" text-center p-10 rounded-xl my-10 flex-1 dark:text-gray-200" >
+                <div className=" text-left p-10 rounded-xl my-10 flex-1 dark:text-gray-200" >
                 <ul className="list-disc">
                     <li>Reasype</li>
                     <li>AuctionHub</li>
@@ -15,7 +18,7 @@ const Projects = () => {
                 </ul>
                 
                 </div>
-                <div className=" text-center p-10 rounded-xl my-10 flex-1 dark:text-gray-200" >
+                <div className=" text-left p-10 rounded-xl my-10 flex-1 dark:text-gray-200" >
                 <ul className="list-disc">
                     <li>Reasype</li>
                     <li>AuctionHub</li>
@@ -38,6 +41,7 @@ const Projects = () => {
               
             </div>
             
+          </div>
           </div>
   );
 };

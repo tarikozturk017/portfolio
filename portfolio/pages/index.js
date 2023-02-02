@@ -229,7 +229,7 @@ export default function Home() {
               Hover over images to play animated demo
             </p> */}
           <button 
-            className=' cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 my-5 rounded-md '
+            className=' cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 my-8 rounded-md '
             onClick={() => {setExpendList(!expendList)}}
           >{!expendList ? "Click To See Project List" : "Hide List"} </button>
           {expendList && <Projects />}
