@@ -17,21 +17,21 @@ import reasype from "../public/reasype.gif"
 import staticAuctionHub from "../public/auctionhub.jpg"
 import auctionHub from "../public/auctionhub.gif"
 import staticReasype from "../public/staticReasype.jpg"
-import planetBlue from "../public/planetBlue.png"
+import planetBlue from "../public/planetblue.jpg"
 import planetBlueGif from "../public/planetblue.gif"
-import speedTyping from "../public/speedTyping.png"
-import speedTypingGif from "../public/speedtyping.gif"
-import memeGenerator from "../public/memeGenerator.png"
-import memeGeneratorGif from "../public/meme-generator.gif"
-import trivia from "../public/trivia.png"
+import speedTyping from "../public/speed.jpg"
+import speedTypingGif from "../public/speed.gif"
+import memeGenerator from "../public/memeGenerator.jpg"
+import memeGeneratorGif from "../public/memeGenerator.gif"
+import trivia from "../public/trivia.jpg"
 import triviaGif from "../public/trivia.gif"
-import pomodoro from "../public/pomodoro.png"
+import pomodoro from "../public/pomodoro.jpg"
 import pomodoroGif from "../public/pomodoro.gif"
-import tenzies from "../public/tenzies.png"
+import tenzies from "../public/tenzies.jpg"
 import tenziesGif from "../public/tenzies.gif"
 import calculator from "../public/calculator.png"
 import calculatorGif from "../public/calculator.gif"
-import quoteGenerator from "../public/quote-generator.png"
+import quoteGenerator from "../public/quote-generator.jpg"
 import quoteGeneratorGif from "../public/quote-generator.gif"
 import projectData from "./components/data"
 
@@ -155,34 +155,8 @@ export default function Home() {
             </div>
           </div>
               </div>
-              <div>
                {/* THIRD */}
                <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  shadow-gray-500 flex-1">
-              <HoverBox static={tenzies} playGif={tenziesGif} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white ">
-                Reasype
-              </h3>
-              <p className="py-2 dark:text-white">
-                Creating elegant designs suited for your needs following core
-                design theory.
-              </p>
-              
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
-              <HoverBox static={pomodoro} playGif={pomodoroGif} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Consulting</h3>
-              <p className="py-2 dark:text-white">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
-              </p>
-            
-            </div>
-          </div>
-              </div>
-
-              {/* FOURTH */}
-              <div className="lg:flex gap-10">
               <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
             <HoverBox static={speedTyping} playGif={speedTypingGif} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
@@ -210,6 +184,35 @@ export default function Home() {
             
             
           </div>
+              
+
+              {/* FOURTH */}
+              <div>
+               <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  shadow-gray-500 flex-1">
+              <HoverBox static={tenzies} playGif={tenziesGif} />
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white ">
+                Reasype
+              </h3>
+              <p className="py-2 dark:text-white">
+                Creating elegant designs suited for your needs following core
+                design theory.
+              </p>
+              
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
+              <HoverBox static={pomodoro} playGif={pomodoroGif} />
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Consulting</h3>
+              <p className="py-2 dark:text-white">
+                Are you interested in feedback for your current project? I can
+                give you tips and tricks to level it up.
+              </p>
+            
+            </div>
+          </div>
+              </div>
+
+              
           {/* FIFTH */}
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
