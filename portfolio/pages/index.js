@@ -68,7 +68,7 @@ export default function Home() {
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden my-12 md:h-84 md:w-84">
               <Image src={tarikPic} layout="fill" objectFit="cover" />
             </div>
-          <p className='text-2xl mb-4 py-2 leading-8 text-center text-gray-100 font-burtons'>Software Developer</p>
+          <p className='text-2xl mb-4 py-2 leading-8 text-center dark:text-gray-100 font-burtons'>Software Developer</p>
           <div className='text-5xl flex justify-center my-1 gap-16 text-gray-600 dark:text-gray-400'>
           <a href="https://twitter.com/tarikozturk017" target={'_blank'}><AiFillTwitterCircle /></a>
             <a href="https://www.linkedin.com/in/tarik-ozturk-28b050159/" target={'_blank'}><AiFillLinkedin /></a>

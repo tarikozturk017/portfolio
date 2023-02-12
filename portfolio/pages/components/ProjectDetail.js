@@ -18,6 +18,7 @@ const ProjectDetail = (props) => {
                 width={"100%"}  height={"100%"} alt='' src={images.static} /> */}
                 <HoverBox static={images.static} playGif={images.dynamic} />
             </div>
+            {technologies[1] ? 
             <ul className=" justify-between flex px-16 my-8 dark:text-gray-200">
                 {technologies.map((technology) => {
                     return (
@@ -27,6 +28,9 @@ const ProjectDetail = (props) => {
                     )
                 })}
             </ul>
+             : <ul className=" justify-between flex px-16 my-8 dark:text-gray-200"><li className=" mx-auto bg-slate-500 text-white object-center font-bold py-2 px-4 rounded opacity-70 cursor-not-allowed">
+                {technologies[0]}
+            </li></ul>}
             <h3 className="text-3xl my-10 font-medium  pb-2 dark:text-gray-200">
                 {name}
             </h3>

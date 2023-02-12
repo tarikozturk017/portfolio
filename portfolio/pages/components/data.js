@@ -19,6 +19,8 @@ import quoteGenerator from "../../public/quote-generator.jpg"
 import quoteGeneratorGif from "../../public/quote-generator.gif"
 import calculator from "../../public/calculator.png"
 import calculatorGif from "../../public/calculator.gif"
+import code from "../../public/code.jpeg"
+
 
 
 const projectData = [
@@ -112,7 +114,52 @@ const projectData = [
             "dynamic": calculatorGif,            
         }
     },
-    
+
+    {
+        "name":"Aid Management System",
+        "technologies": ["C++"],
+        "description": "Aid management system manages the list of items needed to be shipped to places. It is an application where users can keep track of perishable and non-perishable items. I used C++ classes, dynamic memory allocation, operation overload, and more to create this application. This application allows you to read, write, update from/to file. (This project does not have a UI.)",
+        "images": {
+            "static": code,
+            "dynamic": code,            
+        }
+    },
+    {
+        "name":"Employee Management System",
+        "technologies": ["C++", "Oracle"],
+        "description": "Employee management system allows you to apply CRUD on Oracle NoSQL Database. It allows users to find, add, update, remove employee. Additionally, it retrieve employee data from the database. (This project does not have a UI.)",
+        "images": {
+            "static": code,
+            "dynamic": code,            
+        }
+    },
+    {
+        "name":"Account Ticketing System",
+        "technologies": ["C"],
+        "description": "Account ticketing system is an application where the users can track reported tickets. Each tickets contain certain problems and its description. The user can also manage tickets, and persist data. (This project does not have a UI.)",
+        "images": {
+            "static": code,
+            "dynamic": code,            
+        }
+    },
+    {
+        "name":"Assembly Workstation",
+        "technologies": ["C++"],
+        "description": "Assembly Workstation application is a simulation of an assembly line with any number of work stations. The assembly line consists of a set of workstations each of which holds a set of stock items, which are specific to the station. A line manager moves customer orders along the line filling the orders at each station, as requested. Each customer order consists of a list of items that need to be filled. Each station processes a queue of orders by filling the next order in the queue if that order requests the station's item and that item is in stock. The line manager keeps moving the customer orders from station to station until all orders have been processed. Any station that has used all the items in stock cannot fill any more orders. At the end of the line orders are either completed or incomplete due to a lack of inventory at one or more stations. The simulator lists the completed orders and those that are incomplete once the line manager has finished processing all orders. (This project does not have a UI.)",
+        "images": {
+            "static": code,
+            "dynamic": code,            
+        }
+    },
+    {
+        "name":"School Database Management System",
+        "technologies": ["JavaScript", "express", "PostgreSQL"],
+        "description": "This application allows users to apply CRUD on the relational database system. Users can query, add, delete, update student and course data from the database. This is mainly a backend web application with a basic UI.",
+        "images": {
+            "static": code,
+            "dynamic": code,            
+        }
+    },
 ];
 
 export default projectData;
