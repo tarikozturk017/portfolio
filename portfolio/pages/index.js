@@ -48,13 +48,27 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h3 className='text-4xl py-2 md:text-5xl dark:text-white'>Hi, I am</h3>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tarik Ozturk</h2>
-            <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer </h3>
+            {/* <h3 className='text-4xl py-2 md:text-5xl dark:text-white'>Hi, I am</h3> */}
+            {/* <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tarik Ozturk</h2> */}
+            {/* <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer </h3> */}
+
+            <h1 className="mb-2 font-mono text-4xl dark:text-white md:text-6xl">
+              Hi, I&apos;m <br className="block md:hidden" />
+              <span className="relative">
+                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent font-bold dark:text-teal-400 text-teal-600 font-medium md:text-6xl ">
+                  Tarik <span className="text-3xl md:text-5xl">👋</span>
+                </span>
+                <span
+                  className="{`${styles.cursor} absolute -bottom-0 left-0 -top-1 inline-block bg-slate-100 dark:bg-gray-900 w-full animate-type will-change`}"
+                ></span>
+              </span>
+            </h1>
+
           </div>
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden my-12 md:h-84 md:w-84">
               <Image src={tarikPic} layout="fill" objectFit="cover" />
             </div>
+          <p className='text-2xl mb-4 py-2 leading-8 text-center text-gray-100 font-burtons'>Software Developer</p>
           <div className='text-5xl flex justify-center my-1 gap-16 text-gray-600 dark:text-gray-400'>
           <a href="https://twitter.com/tarikozturk017" target={'_blank'}><AiFillTwitterCircle /></a>
             <a href="https://www.linkedin.com/in/tarik-ozturk-28b050159/" target={'_blank'}><AiFillLinkedin /></a>
