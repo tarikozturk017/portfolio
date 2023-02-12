@@ -15,6 +15,7 @@ const Projects = () => {
     data.map((project) => {
       if(project.name == name) {
         // console.log(project)
+        console.log(project.name)
         setProjectDisplay(project)
       }
     })
@@ -49,9 +50,9 @@ const Projects = () => {
                 </div> */}
                 <ul className="list-disc">
                   {data.map((project) => {
-                    let pImg = project.images.static
+                    // let pImg = project.images.static
                     return (
-                      <li onMouseOver={e => handleMouse(e.target.innerText)}>{project.name}</li>
+                      <li className=" my-5" onMouseOver={e => handleMouse(e.target.innerText)}>{project.name}</li>
                     )
                   })}
                 </ul>

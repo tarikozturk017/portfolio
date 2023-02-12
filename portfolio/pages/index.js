@@ -7,6 +7,9 @@ import Carousel from "react-elastic-carousel";
 import HoverBox from './components/HoverBox';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
+import ProjectDetail from './components/ProjectDetail';
+
+import data from "./components/data"
 
 // import SendForm from './components/SendForm';
 
@@ -105,24 +108,18 @@ export default function Home() {
             {/* FIRST */}
             <div className="w-auto lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
-              <HoverBox static={staticAuctionHub} playGif={auctionHub} />
+              {/* <HoverBox static={staticAuctionHub} playGif={auctionHub} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Consulting</h3>
               <p className="py-2 dark:text-white">
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
-              </p>
+              </p> */}
+              <ProjectDetail project={data[0]}/>
             
             </div>
             <div className="text-center shadow-lg shadow-gray-500 p-10 rounded-xl my-10   flex-1">
-              <HoverBox static={staticReasype} playGif={reasype} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
-                Reasype
-              </h3>
-              <p className="py-2 dark:text-gray-200">
-                Creating elegant designs suited for your needs following core
-                design theory.
-              </p>
               
+              <ProjectDetail project={data[1]}/>
             </div>
             
           </div>
@@ -131,26 +128,12 @@ export default function Home() {
                 {/* SECOND */}
               <div className="lg:flex gap-10">
                 <div className="text-center p-10 rounded-xl my-10 shadow-lg shadow-gray-500 flex-1">
-              <HoverBox static={planetBlue} playGif={planetBlueGif} />
-                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                  Code your dream project
-                </h3>
-                <p className="py-2 dark:text-white">
-                  Do you have an idea for your next great website? Let's make it a
-                  reality.
-                </p>
+                <ProjectDetail project={data[2]}/>
                 
               </div>
             
             <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
-            <HoverBox static={trivia} playGif={triviaGif} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                Code your dream project
-              </h3>
-              <p className="py-2 dark:text-white">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
-              </p>
+            <ProjectDetail project={data[3]}/>
               
             </div>
           </div>
@@ -158,27 +141,12 @@ export default function Home() {
                {/* THIRD */}
                <div className="lg:flex gap-10">
               <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
-            <HoverBox static={speedTyping} playGif={speedTypingGif} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                Code your dream project
-              </h3>
-              <p className="py-2 dark:text-white">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
-              </p>
+              <ProjectDetail project={data[4]}/>
               
               
             </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10  shadow-gray-500 flex-1">
-              {/* <Image src={tarikPic} width={100} height={100} /> */}
-              <HoverBox static={memeGenerator} playGif={memeGeneratorGif} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white ">
-                Reasype
-              </h3>
-              <p className="py-2 dark:text-white">
-                Creating elegant designs suited for your needs following core
-                design theory.
-              </p>
+              <ProjectDetail project={data[5]}/>
               
             </div>
             
@@ -190,23 +158,10 @@ export default function Home() {
               <div>
                <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  shadow-gray-500 flex-1">
-              <HoverBox static={tenzies} playGif={tenziesGif} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white ">
-                Reasype
-              </h3>
-              <p className="py-2 dark:text-white">
-                Creating elegant designs suited for your needs following core
-                design theory.
-              </p>
-              
+            <ProjectDetail project={data[6]}/>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
-              <HoverBox static={pomodoro} playGif={pomodoroGif} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Consulting</h3>
-              <p className="py-2 dark:text-white">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
-              </p>
+            <ProjectDetail project={data[7]}/>
             
             </div>
           </div>
@@ -216,25 +171,10 @@ export default function Home() {
           {/* FIFTH */}
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
-                <HoverBox static={quoteGenerator} playGif={quoteGeneratorGif} />
-                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Consulting</h3>
-                <p className="py-2 dark:text-white">
-                  Are you interested in feedback for your current project? I can
-                  give you tips and tricks to level it up.
-                </p>
-              
+            <ProjectDetail project={data[8]}/>
               </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
-            <HoverBox static={calculator} playGif={calculatorGif} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                Code your dream project
-              </h3>
-              <p className="py-2 dark:text-white">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
-              </p>
-              
-              
+              <ProjectDetail project={data[9]}/>
             </div>
             
           </div>
