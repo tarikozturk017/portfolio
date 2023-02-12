@@ -24,35 +24,18 @@ const Projects = () => {
   return (
         <div>
           <div className=" flex justify-around">
-          <h3 className="text-xl font-medium  dark:text-gray-200">List of My Projects</h3>
           {/* <h3 className="text-xl font-medium  dark:text-gray-200">Project Details</h3> */}
           </div>
         <div className="w-auto lg:flex gap-10">
             
-            <div className="text-center lg:flex p-10 rounded-xl my-10 flex-1 dark:text-gray-200">
-                {/* <div className=" text-left p-10 rounded-xl my-10 flex-1 dark:text-gray-200" >
-                <ul className="list-disc">
-                    <li>Reasype</li>
-                    <li>AuctionHub</li>
-                    <li>PlanetBlue</li>
-                    <li>Pomodoro Clock</li>
-                </ul>
+            <div className="text-center  p-10 rounded-xl my-10 flex-1 dark:text-gray-200">
+          <h3 className="text-3xl mb-12 font-medium  dark:text-gray-200">All Projects List</h3>
                 
-                </div>
-                <div className=" text-left p-10 rounded-xl my-10 flex-1 dark:text-gray-200" >
-                <ul className="list-disc">
-                    <li>Reasype</li>
-                    <li>AuctionHub</li>
-                    <li>PlanetBlue</li>
-                    <li>Pomodoro Clock</li>
-                </ul>
-                
-                </div> */}
                 <ul className="list-disc">
                   {data.map((project) => {
                     // let pImg = project.images.static
                     return (
-                      <li className=" my-5" onMouseOver={e => handleMouse(e.target.innerText)}>{project.name}</li>
+                      <li className=" my-5 cursor-pointer" onMouseOver={e => handleMouse(e.target.innerText)}>{project.name}</li>
                     )
                   })}
                 </ul>

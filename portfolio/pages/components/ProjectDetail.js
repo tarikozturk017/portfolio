@@ -18,7 +18,7 @@ const ProjectDetail = (props) => {
                 width={"100%"}  height={"100%"} alt='' src={images.static} /> */}
                 <HoverBox static={images.static} playGif={images.dynamic} />
             </div>
-            <ul className=" justify-between flex mx-16 my-8 dark:text-gray-200">
+            <ul className=" justify-between flex px-16 my-8 dark:text-gray-200">
                 {technologies.map((technology) => {
                     return (
                         <li className=" bg-slate-500 text-white font-bold py-2 px-4 rounded opacity-70 cursor-not-allowed">
@@ -33,7 +33,7 @@ const ProjectDetail = (props) => {
             <p className="py-2 dark:text-gray-200">
             {description}
             </p>
-            <p className=" dark:text-gray-200">Live app: {url}</p>
+            <p className=" dark:text-gray-200">Live app: <a href="" target={'_blank'}>{url}</a></p>
         </>
     )
 }

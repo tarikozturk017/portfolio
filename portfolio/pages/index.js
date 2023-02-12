@@ -4,38 +4,15 @@ import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import { useState } from 'react';
 import Image from 'next/image';
 import Carousel from "react-elastic-carousel";
-import HoverBox from './components/HoverBox';
+// import HoverBox from './components/HoverBox';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
 
-import data from "./components/data"
-
-// import SendForm from './components/SendForm';
+// import data from "./components/data"
 
 
-// import images
 import tarikPic from "../public/tarik-pic.png"
-import reasype from "../public/reasype.gif"
-import staticAuctionHub from "../public/auctionhub.jpg"
-import auctionHub from "../public/auctionhub.gif"
-import staticReasype from "../public/staticReasype.jpg"
-import planetBlue from "../public/planetblue.jpg"
-import planetBlueGif from "../public/planetblue.gif"
-import speedTyping from "../public/speed.jpg"
-import speedTypingGif from "../public/speed.gif"
-import memeGenerator from "../public/memeGenerator.jpg"
-import memeGeneratorGif from "../public/memeGenerator.gif"
-import trivia from "../public/trivia.jpg"
-import triviaGif from "../public/trivia.gif"
-import pomodoro from "../public/pomodoro.jpg"
-import pomodoroGif from "../public/pomodoro.gif"
-import tenzies from "../public/tenzies.jpg"
-import tenziesGif from "../public/tenzies.gif"
-import calculator from "../public/calculator.png"
-import calculatorGif from "../public/calculator.gif"
-import quoteGenerator from "../public/quote-generator.jpg"
-import quoteGeneratorGif from "../public/quote-generator.gif"
 import projectData from "./components/data"
 
 export default function Home() {
@@ -55,7 +32,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=' bg-white px-10 md:px-20 lg:40 dark:bg-gray-900'>
+      <main className=' pb-36 bg-white px-10 md:px-20 lg:40 dark:bg-gray-900'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between dark:text-white'>
             <h1 className=' text-xl font-burtons'><a href="#projects" className='scroll-smooth'>Projects</a>&emsp;|&emsp;<a href="">Blog</a></h1>
@@ -67,9 +44,19 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
+            <h3 className='text-4xl py-2 md:text-5xl dark:text-white'>Hi, I am</h3>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tarik Ozturk</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer </h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl mx-w-xl mx-auto dark:text-gray-200'>Hi, I am a developer with a passion for creating efficient solutions to complex problems. 
+          </div>
+          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-84 md:w-84">
+              <Image src={tarikPic} layout="fill" objectFit="cover" />
+            </div>
+          <div className='text-5xl flex justify-center my-12 gap-16 text-gray-600 dark:text-gray-400'>
+          <a href="https://twitter.com/tarikozturk017" target={'_blank'}><AiFillTwitterCircle /></a>
+            <a href="https://www.linkedin.com/in/tarik-ozturk-28b050159/" target={'_blank'}><AiFillLinkedin /></a>
+            <a href="https://github.com/tarikozturk017" target={'_blank'}><AiFillGithub /></a> 
+          </div>
+            <p className=' text-center text-md mt-10 py-5 leading-8 text-gray-800 md:text-xl mx-w-xl mx-auto dark:text-gray-200'>I am a developer with a passion for creating efficient solutions to complex problems. 
               My interest in solving problems developed through life science while studying for my B.S. in 
               Physiotherapy and Rehabilitation. Then I started learning programming as a hobby, which led a 
               career change. I am currently studying Computer Programming at Seneca College in Toronto. During 
@@ -77,23 +64,14 @@ export default function Home() {
               backend and frontend web development, software analysis and design. I wish to continue working with 
               passionate teams of talented developers to create technology that benefits its users by improving their 
               daily health and everyday life.</p>
-          </div>
-          <div className='text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-400'>
-          <a href="https://twitter.com/tarikozturk017"><AiFillTwitterCircle /></a>
-            <a href="https://www.linkedin.com/in/tarik-ozturk-28b050159/"><AiFillLinkedin /></a>
-            <a href="https://github.com/tarikozturk017"><AiFillGithub /></a> 
-          </div>
-          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-84 md:w-84">
-              <Image src={tarikPic} layout="fill" objectFit="cover" />
-            </div>
         </section>
         
         
         <section id='projects'>
           <div className='text-center'>
-            <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              Hover over images to play animated demo
+            <h3 className=' text-5xl mb-8 py-1 dark:text-white'>Projects</h3>
+            <p className='text-2xl italic py-2 leading-8 text-gray-500'>
+              Hover over images to play demo
             </p>
           </div>
           <div>
@@ -101,10 +79,15 @@ export default function Home() {
           </div>
         </section>
         <section>
+          <div className=' text-center'>
+        <button 
+            className=' cursor-pointer bg-gradient-to-r text-lg from-cyan-500 to-teal-500 text-white px-6 py-2 my-8 rounded-md '
+            onClick={() => {setExpendList(!expendList)}}
+          >{!expendList ? "Click To See Listed Style (All Projects)" : "Click To See Sliding Style"} </button>
+          </div>
+          { !expendList ?
         <Carousel>
-          <div>
-            {/* FIRST */}
-          
+          <div>          
             {/* FIRST */}
             <div className="w-auto lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
@@ -143,17 +126,14 @@ export default function Home() {
               <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
               <ProjectDetail project={data[4]}/>
               
-              
             </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10  shadow-gray-500 flex-1">
               <ProjectDetail project={data[5]}/>
               
             </div>
             
-            
           </div>
               
-
               {/* FOURTH */}
               <div>
                <div className="lg:flex gap-10">
@@ -179,16 +159,14 @@ export default function Home() {
             
           </div>
           </Carousel>
+          : <Projects />}
         </section>
         
         <section>
         <div className=' text-center'>
            
-          <button 
-            className=' cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 my-8 rounded-md '
-            onClick={() => {setExpendList(!expendList)}}
-          >{!expendList ? "Click To See Project List" : "Hide List"} </button>
-          {expendList && <Projects />}
+          
+          {/* {expendList && <Projects />} */}
           </div>
         </section>
       </main>

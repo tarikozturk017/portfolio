@@ -34,13 +34,13 @@ return (
 			<Heading>About</Heading>
 			<FooterLink href="#">Blogs</FooterLink>
 			<FooterLink href="#">Courses | Certificate</FooterLink>
-			<FooterLink href="#">Seneca Software Developers Club </FooterLink>
-			<FooterLink href="https://github.com/tarikozturk017/SLG-practices">SLG Workshops</FooterLink>
+			<FooterLink href="https://clubs.ssfinc.ca/ssdc/home/" target={'_blank'}>Seneca Software Developers Club </FooterLink>
+			<FooterLink href="https://github.com/tarikozturk017/SLG-practices" target={'_blank'}>SLG Workshops</FooterLink>
 		</Column>
 
 		<Column>
 			<Heading className="">Social</Heading>
-            <FooterLink href="https://github.com/tarikozturk017">
+            <FooterLink href="https://github.com/tarikozturk017" target={'_blank'}>
             <div className="flex items-center">
                 <AiFillGithub />
 				<span className=" ml-3" >
@@ -48,7 +48,7 @@ return (
 				</span>
             </div>
 			</FooterLink>
-			<FooterLink href="https://www.linkedin.com/in/tarik-ozturk-28b050159/">
+			<FooterLink href="https://www.linkedin.com/in/tarik-ozturk-28b050159/" target={'_blank'}>
             <div className="flex items-center">
                 <AiFillLinkedin />
 				<span className=" ml-3" >
@@ -56,7 +56,7 @@ return (
 				</span>
             </div>
 			</FooterLink>
-			<FooterLink href="https://twitter.com/tarikozturk017">
+			<FooterLink href="https://twitter.com/tarikozturk017" target={'_blank'}>
             <div className="flex items-center">
                 <AiFillTwitterCircle />
 				<span className=" ml-3" >
