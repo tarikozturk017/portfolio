@@ -10,6 +10,7 @@ import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
 
 // import data from "./components/data"
+// import resume from "../assets/TarikOzturk-Resume.pdf"
 
 
 import tarikPic from "../public/tarik-pic.png"
@@ -43,7 +44,7 @@ export default function Home() {
                   <BsFillMoonStarsFill className='cursor-pointer text-2xl' onClick={() => setDarkMode(!darkMode)}/> 
                 }
               </li>
-              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href={'/resume/TarikOzturk-Resume.pdf'} download>Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
@@ -73,7 +74,7 @@ export default function Home() {
         <section id='projects'>
           <div className='text-center'>
             <h3 className=' text-5xl mb-8 py-1 dark:text-white'>Projects</h3>
-            <p className='text-2xl italic py-2 leading-8 text-gray-500'>
+            <p className='text-2xl  py-2 leading-8 text-gray-400 font-burtons'>
               Hover over images to play demo
             </p>
           </div>

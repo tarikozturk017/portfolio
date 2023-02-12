@@ -11,7 +11,7 @@ function HoverBox(props) {
       <button
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}>
-        <Image alt='' className=" max-w-2xl h-auto transition-shadow ease-in-out duration-300 shadow-none hover:shadow-xl rounded" width={"100%"}  height={"100%"} layout={"responsive"} src={img} />
+        <Image alt='' className=" max-w-2xl h-auto transition-shadow ease-in-out duration-300 hover:shadow-gray-500 hover:shadow-xl rounded" width={"100%"}  height={"100%"} layout={"responsive"} src={img} />
       </button>
     </div>
   );
