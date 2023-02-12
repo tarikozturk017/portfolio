@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {BsFillMoonStarsFill} from 'react-icons/bs'
+import {BsFillMoonStarsFill, BsSunFill } from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import { useState } from 'react';
 import Image from 'next/image';
@@ -32,13 +32,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=' pb-36 bg-white px-10 md:px-20 lg:40 dark:bg-gray-900'>
+      <main className=' pb-36 bg-slate-100 px-10 md:px-20 lg:40 dark:bg-gray-900'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between dark:text-white'>
             <h1 className=' text-xl font-burtons'><a href="#projects" className='scroll-smooth'>Projects</a>&emsp;|&emsp;<a href="">Blog</a></h1>
             <ul className='flex items-center'>
               <li>
-                <BsFillMoonStarsFill className='cursor-pointer text-2xl' onClick={() => setDarkMode(!darkMode)}/>
+                { darkMode ?
+                  <BsSunFill className='cursor-pointer text-2xl' onClick={() => setDarkMode(!darkMode)}/> :
+                  <BsFillMoonStarsFill className='cursor-pointer text-2xl' onClick={() => setDarkMode(!darkMode)}/> 
+                }
               </li>
               <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
             </ul>
@@ -48,15 +51,15 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tarik Ozturk</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer </h3>
           </div>
-          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-84 md:w-84">
+          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden my-12 md:h-84 md:w-84">
               <Image src={tarikPic} layout="fill" objectFit="cover" />
             </div>
-          <div className='text-5xl flex justify-center my-12 gap-16 text-gray-600 dark:text-gray-400'>
+          <div className='text-5xl flex justify-center my-1 gap-16 text-gray-600 dark:text-gray-400'>
           <a href="https://twitter.com/tarikozturk017" target={'_blank'}><AiFillTwitterCircle /></a>
             <a href="https://www.linkedin.com/in/tarik-ozturk-28b050159/" target={'_blank'}><AiFillLinkedin /></a>
             <a href="https://github.com/tarikozturk017" target={'_blank'}><AiFillGithub /></a> 
           </div>
-            <p className=' text-center text-md mt-10 py-5 leading-8 text-gray-800 md:text-xl mx-w-xl mx-auto dark:text-gray-200'>I am a developer with a passion for creating efficient solutions to complex problems. 
+            <p className=' text-center text-md mt-10 py-5 leading-8 text-gray-800 md:text-xl max-w-7xl mx-auto dark:text-gray-200'>I am a developer with a passion for creating efficient solutions to complex problems. 
               My interest in solving problems developed through life science while studying for my B.S. in 
               Physiotherapy and Rehabilitation. Then I started learning programming as a hobby, which led a 
               career change. I am currently studying Computer Programming at Seneca College in Toronto. During 
