@@ -3,7 +3,8 @@ import {BsFillMoonStarsFill, BsSunFill } from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import { useState } from 'react';
 import Image from 'next/image';
-import Carousel from "react-elastic-carousel";
+// import Carousel from "react-elastic-carousel";
+import Carousel from "nuka-carousel";
 // import HoverBox from './components/HoverBox';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
@@ -103,8 +104,9 @@ export default function Home() {
             onClick={() => {setExpendList(!expendList)}}
           >{!expendList ? "Click To See Listed Style (All Projects)" : "Click To See Sliding Style"} </button>
           </div>
-          { !expendList ?
-        <Carousel>
+        {/* // <Carousel> */}
+        { !expendList ?
+        <Carousel wrapAround={true} slidesToShow={1} >
           <div>          
             {/* FIRST */}
             <div className="w-auto lg:flex gap-10">
@@ -177,7 +179,11 @@ export default function Home() {
             
           </div>
           </Carousel>
-          : <Projects />}
+
+
+
+
+          : <Projects />} 
         </section>
         
         <section>
