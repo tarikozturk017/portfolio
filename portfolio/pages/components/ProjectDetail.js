@@ -3,7 +3,7 @@ import HoverBox from "./HoverBox"
 
 const ProjectDetail = (props) => {
     const {
-        name,
+        // name,
         description,
         technologies,
         images,
@@ -32,7 +32,7 @@ const ProjectDetail = (props) => {
                 {technologies[0]}
             </li></ul>}
             <h3 className="text-3xl my-10 font-medium  pb-2 dark:text-gray-200">
-                {name}
+                {props.project.name}
             </h3>
             <p className="py-2 dark:text-gray-200">
             {description}
