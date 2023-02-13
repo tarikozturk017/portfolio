@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
+    "@emotion/core": "^11.0.0",
     "@emotion/is-prop-valid": "^1.2.0",
     "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@next/font": "13.1.4",
     "next": "13.1.4",
     "nuka-carousel": "^5.4.1",

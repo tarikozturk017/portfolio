@@ -67,7 +67,7 @@ export default function Home() {
 
           </div>
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden my-12 md:h-84 md:w-84">
-              <Image src={tarikPic} layout="fill" objectFit="cover" />
+              <Image src={tarikPic} layout="fill" objectFit="cover" alt='' />
             </div>
           <p className='text-2xl mb-4 py-2 leading-8 text-center dark:text-gray-100 font-burtons'>Software Developer</p>
           <div className='text-5xl flex justify-center my-1 gap-16 text-gray-600 dark:text-gray-400'>

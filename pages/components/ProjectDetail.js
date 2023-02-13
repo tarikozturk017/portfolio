@@ -1,5 +1,5 @@
-import Image from "next/image"
 import HoverBox from "./HoverBox"
+import isPropValid from '@emotion/is-prop-valid'
 
 const ProjectDetail = (props) => {
     // const {
@@ -9,6 +9,9 @@ const ProjectDetail = (props) => {
     //     // images,
     //     // url
     // } = props.project
+
+    // if (isPropValid(props)) { 
+        console.log(props.project)
 
     return (
         
@@ -40,6 +43,7 @@ const ProjectDetail = (props) => {
             <p className=" dark:text-gray-200">Live app: <a href="" target={'_blank'}></a></p>
         </>
     )
+// }
 }
 
 export default ProjectDetail;
