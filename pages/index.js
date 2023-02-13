@@ -6,9 +6,10 @@ import Image from 'next/image';
 // import Carousel from "react-elastic-carousel";
 import Carousel from "nuka-carousel";
 // import HoverBox from './components/HoverBox';
-import Footer from './components/Footer';
 import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
+import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 // import data from "./components/data"
 // import resume from "../assets/TarikOzturk-Resume.pdf"
@@ -106,7 +107,7 @@ export default function Home() {
           </div>
         {/* // <Carousel> */}
         { !expendList ?
-        <Carousel wrapAround={true} slidesToShow={1} >
+        <Carousel className wrapAround={true} slidesToShow={1} >
           <div>          
             {/* FIRST */}
             <div className="w-auto lg:flex gap-10">
@@ -195,6 +196,7 @@ export default function Home() {
         </section>
       </main>
       {/* <SendForm /> */}
+      {/* <Footer /> */}
       <Footer />
     </div>
   );

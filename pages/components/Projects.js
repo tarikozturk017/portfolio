@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-import Image from "next/image";
-import img from "../../public/auctionhub.jpg"
 import ProjectDetail from "./ProjectDetail";
 import data from "../../helper/data"
 
@@ -43,19 +41,6 @@ const Projects = () => {
 
             <div className="text-center shadow-xl shadow-gray-200 dark:shadow-gray-700 p-10 rounded-xl my-10   flex-1">
             
-              {/* <div className=" block">
-                <Image className=" mx-auto max-w-2xl h-auto transition-shadow ease-in-out duration-300 shadow-none hover:shadow-xl rounded" 
-                width={"100%"}  height={"100%"} alt='' src={projectDisplay.images.static} />
-                
-              </div>
-
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
-                Reasype
-              </h3>
-              <p className="py-2 dark:text-gray-200">
-                Creating elegant designs suited for your needs following core
-                design theory.
-              </p> */}
               <ProjectDetail project={projectDisplay} />
             </div>
             
