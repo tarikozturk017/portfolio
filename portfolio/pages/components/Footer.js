@@ -6,7 +6,7 @@ Row,
 Column,
 FooterLink,
 Heading,
-} from "./FooterStyles";
+} from "../../helper/FooterStyles";
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import SendForm from "./SendForm";
 

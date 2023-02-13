@@ -15,7 +15,7 @@ import ProjectDetail from './components/ProjectDetail';
 
 
 import tarikPic from "../public/tarik-pic.png"
-import projectData from "./components/data"
+import projectData from "../helper/data"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);

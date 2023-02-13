@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import img from "../../public/auctionhub.jpg"
 import ProjectDetail from "./ProjectDetail";
-import data from "./data"
+import data from "../../helper/data"
 
 
 
