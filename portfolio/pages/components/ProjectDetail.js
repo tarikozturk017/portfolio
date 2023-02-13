@@ -2,13 +2,13 @@ import Image from "next/image"
 import HoverBox from "./HoverBox"
 
 const ProjectDetail = (props) => {
-    const {
-        // name,
-        // description,
-        // technologies,
-        // images,
-        // url
-    } = props.project
+    // const {
+    //     // name,
+    //     // description,
+    //     // technologies,
+    //     // images,
+    //     // url
+    // } = props.project
 
     return (
         
