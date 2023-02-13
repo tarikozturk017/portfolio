@@ -24,7 +24,7 @@ const Projects = () => {
           <div className=" flex justify-around">
           {/* <h3 className="text-xl font-medium  dark:text-gray-200">Project Details</h3> */}
           </div>
-        <div className="w-auto lg:flex gap-10">
+          <div className="w-auto lg:flex gap-10">
             
             <div className=" p-10 rounded-xl my-10 mb-52 flex-1 dark:text-gray-200">
           <h3 className="text-3xl mb-12 text-center font-medium  dark:text-gray-200">All Projects List</h3>
@@ -45,7 +45,7 @@ const Projects = () => {
             </div>
             
           </div>
-          </div>
+        </div>
   );
 };
 

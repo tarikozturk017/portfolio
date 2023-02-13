@@ -1,5 +1,6 @@
 import Image from "next/image"
 import HoverBox from "./HoverBox"
+import React from "react"
 
 const ProjectDetail = (props) => {
     // const {
@@ -9,8 +10,9 @@ const ProjectDetail = (props) => {
     //     // images,
     //     // url
     // } = props.project
+    const p = props.project
 
-    return (
+    const content = typeof p !== 'undefined' ? 
         
         <>
             <div className=" block">
@@ -39,6 +41,15 @@ const ProjectDetail = (props) => {
             </p>
             <p className=" dark:text-gray-200">Live app: <a href="" target={'_blank'}></a></p>
         </>
+    
+     : <></>
+
+    return (
+        
+        <>
+            {content}
+        </>
+    
     )
 }
 
