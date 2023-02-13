@@ -29,7 +29,7 @@ export default function Home() {
 
       <main className=' pb-36 bg-slate-100 px-10 md:px-20 lg:40 dark:bg-gray-900'>
         <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between dark:text-white'>
+          <nav className='py-10 mb-4 flex justify-between dark:text-white'>
             <h1 className=' text-xl font-burtons'><a href="#projects" className='scroll-smooth'>Projects</a>&emsp;|&emsp;<a href="">Blog</a></h1>
             <ul className='flex items-center'>
               <li>
@@ -46,11 +46,11 @@ export default function Home() {
             {/* <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tarik Ozturk</h2> */}
             {/* <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer </h3> */}
 
-            <h1 className="mb-1 font-mono text-4xl dark:text-white md:text-5xl">
+            <h1 className="mb-1 font-mono text-2xl dark:text-white md:text-4xl lg:5xl">
               Hi, I&apos;m <br className="block md:hidden" />
               <span className="relative">
-                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent font-bold dark:text-teal-400 text-teal-600  md:text-5xl ">
-                  Tarik <span className="text-3xl md:text-5xl">👋</span>
+                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent font-bold dark:text-teal-400 text-teal-600  md:text-4xl lg:5xl ">
+                  Tarik <span className="text-3xl md:text-4xl lg:5xl">👋</span>
                 </span>
                 <span
                   className="{`${styles.cursor} absolute -bottom-0 left-0 -top-1 inline-block bg-slate-100 dark:bg-gray-900 w-full animate-type will-change`}"
@@ -62,7 +62,7 @@ export default function Home() {
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden my-4 md:h-84 md:w-84">
               <Image src={tarikPic} layout="fill" objectFit="cover" />
             </div>
-          <p className='text-xl mb-4 py-2 leading-8 text-center dark:text-gray-100 font-burtons'>Software Developer</p>
+          <p className='lg:text-xl text-lg mb-4 py-2 leading-8 text-center dark:text-gray-100 font-burtons'>Software Developer</p>
           <div className='text-5xl flex justify-center my-1 gap-16 text-gray-600 dark:text-gray-400'>
           <a href="https://twitter.com/tarikozturk017" target={'_blank'}><AiFillTwitterCircle /></a>
             <a href="https://www.linkedin.com/in/tarik-ozturk-28b050159/" target={'_blank'}><AiFillLinkedin /></a>
@@ -81,8 +81,8 @@ export default function Home() {
         
         <section id='projects'>
           <div className='text-center'>
-            <h3 className=' text-5xl mb-8 py-1 dark:text-white'>Projects</h3>
-            <p className='text-2xl  py-2 leading-8 text-gray-400 font-burtons'>
+            <h3 className=' md:text-4xl lg:5xl mb-8 py-1 dark:text-white'>Projects</h3>
+            <p className='text-xl  py-2 leading-8 text-gray-400 font-burtons'>
               Hover over images to play demo
             </p>
           </div>
@@ -93,7 +93,7 @@ export default function Home() {
         <section>
           <div className=' text-center'>
         <button 
-            className=' cursor-pointer bg-gradient-to-r text-lg from-cyan-500 to-teal-500 text-white px-6 py-2 my-8 rounded-md '
+            className=' cursor-pointer bg-gradient-to-r text-mg from-cyan-500 to-teal-500 text-white px-6 py-2 my-8 rounded-md '
             onClick={() => {setExpendList(!expendList)}}
           >{!expendList ? "Click To See Listed Style (All Projects)" : "Click To See Sliding Style"} </button>
           </div>
