@@ -1,23 +1,12 @@
-import Image from "next/image"
 import HoverBox from "./HoverBox"
 import React from "react"
 
 const ProjectDetail = (props) => {
-    // const {
-    //     // name,
-    //     // description,
-    //     // technologies,
-    //     // images,
-    //     // url
-    // } = props.project
     const p = props.project
 
     const content = typeof p !== 'undefined' ? 
-        
         <>
             <div className=" block">
-            {/* <Image className=" mx-auto max-w-2xl h-auto transition-shadow ease-in-out duration-300 shadow-none hover:shadow-xl rounded" 
-                width={"100%"}  height={"100%"} alt='' src={images.static} /> */}
                 <HoverBox static={props.project.images.static} playGif={props.project.images.dynamic} />
             </div>
             {props.project.technologies[1] ? 

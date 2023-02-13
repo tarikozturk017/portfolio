@@ -5,15 +5,9 @@ import { useState } from 'react';
 import Image from 'next/image';
 // import Carousel from "react-elastic-carousel";
 import Carousel from "nuka-carousel";
-// import HoverBox from './components/HoverBox';
 import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
 import Footer from './components/Footer';
-// import Footer from './components/Footer';
-
-// import data from "./components/data"
-// import resume from "../assets/TarikOzturk-Resume.pdf"
-
 
 import tarikPic from "../public/tarik-pic.png"
 import projectData from "../helper/data"
@@ -24,8 +18,6 @@ export default function Home() {
 
   let data = projectData;
   
-  // console.log(data[0].technologies[1]);
-
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -54,10 +46,10 @@ export default function Home() {
             {/* <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tarik Ozturk</h2> */}
             {/* <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer </h3> */}
 
-            <h1 className="mb-2 font-mono text-4xl dark:text-white md:text-6xl">
+            <h1 className="mb-1 font-mono text-4xl dark:text-white md:text-5xl">
               Hi, I&apos;m <br className="block md:hidden" />
               <span className="relative">
-                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent font-bold dark:text-teal-400 text-teal-600 font-medium md:text-6xl ">
+                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent font-bold dark:text-teal-400 text-teal-600  md:text-5xl ">
                   Tarik <span className="text-3xl md:text-5xl">👋</span>
                 </span>
                 <span
@@ -67,16 +59,16 @@ export default function Home() {
             </h1>
 
           </div>
-          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden my-12 md:h-84 md:w-84">
+          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden my-4 md:h-84 md:w-84">
               <Image src={tarikPic} layout="fill" objectFit="cover" />
             </div>
-          <p className='text-2xl mb-4 py-2 leading-8 text-center dark:text-gray-100 font-burtons'>Software Developer</p>
+          <p className='text-xl mb-4 py-2 leading-8 text-center dark:text-gray-100 font-burtons'>Software Developer</p>
           <div className='text-5xl flex justify-center my-1 gap-16 text-gray-600 dark:text-gray-400'>
           <a href="https://twitter.com/tarikozturk017" target={'_blank'}><AiFillTwitterCircle /></a>
             <a href="https://www.linkedin.com/in/tarik-ozturk-28b050159/" target={'_blank'}><AiFillLinkedin /></a>
             <a href="https://github.com/tarikozturk017" target={'_blank'}><AiFillGithub /></a> 
           </div>
-            <p className=' text-center text-md mt-10 py-5 leading-8 text-gray-800 md:text-xl max-w-7xl mx-auto dark:text-gray-200'>I am a developer with a passion for creating efficient solutions to complex problems. 
+            <p className=' text-center text-md mt-4 py-5 leading-8 text-gray-800 md:text-xl max-w-7xl mx-auto dark:text-gray-200'>I am a developer with a passion for creating efficient solutions to complex problems. 
               My interest in solving problems developed through life science while studying for my B.S. in 
               Physiotherapy and Rehabilitation. Then I started learning programming as a hobby, which led a 
               career change. I am currently studying Computer Programming at Seneca College in Toronto. During 

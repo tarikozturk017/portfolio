@@ -12,7 +12,6 @@ const Projects = () => {
   const handleMouse = (name) => {
     data.map((project) => {
       if(project.name == name) {
-        // console.log(project)
         console.log(project.name)
         setProjectDisplay(project)
       }
@@ -29,11 +28,10 @@ const Projects = () => {
             <div className=" p-10 rounded-xl my-10 mb-52 flex-1 dark:text-gray-200">
           <h3 className="text-3xl mb-12 text-center font-medium  dark:text-gray-200">All Projects List</h3>
                 
-                <ul className="list-disc lg:px-60 text-lg  md:px-48">
+                <ul className="list-disc lg:px-24 text-md  md:px-16">
                   {data.map((project) => {
-                    // let pImg = project.images.static
                     return (
-                      <li className=" hover:text-teal-500 font-semibold duration-200 my-5 cursor-pointer" onMouseOver={e => handleMouse(e.target.innerText)}>{project.name}</li>
+                      <li className=" hover:text-teal-500 font-semibold duration-200 my-3 cursor-pointer" onMouseOver={e => handleMouse(e.target.innerText)}>{project.name}</li>
                     )
                   })}
                 </ul>
