@@ -1,5 +1,5 @@
 import HoverBox from "./HoverBox"
-import isPropValid from '@emotion/is-prop-valid'
+// import isPropValid from '@emotion/is-prop-valid'
 
 const ProjectDetail = (props) => {
     // const {
