@@ -37,7 +37,7 @@ const Projects = () => {
                 </ul>
             </div>
 
-            <div className="text-center shadow-xl shadow-gray-200 dark:shadow-gray-700 p-10 rounded-xl my-10   flex-1">
+            <div className="text-center shadow-xl shadow-gray-500 dark:shadow-gray-700 p-10 rounded-xl my-10   flex-1">
             
               <ProjectDetail project={projectDisplay} />
             </div>

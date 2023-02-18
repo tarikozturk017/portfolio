@@ -17,6 +17,21 @@ export default function Home() {
   const [expendList, setExpendList] = useState(false);
 
   let data = projectData;
+
+  var carouselContent = data.map((project, index) => {
+    // console.log(project);
+    if (index < 10) {
+    return (
+        
+        <div key={index} className="lg:flex gap-10">
+          <div className="text-center shadow-lg p-8 max-w-4xl  rounded-xl my-10 mx-auto shadow-gray-500 flex-1">
+            <ProjectDetail project={project}/>
+            </div>
+        </div>
+        
+        )
+      }
+    })
   
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -27,15 +42,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=' pb-36 bg-slate-200 px-8 lg:px-20 2xl:px-32 dark:bg-gray-900'>
+      <main className=' pb-12 md:pb-24 xl:pb-36 bg-blue-100 px-8 lg:px-20 2xl:px-32 dark:bg-gray-900'>
         <section className='min-h-screen'>
           <nav className='py-8 mb-4 flex justify-between dark:text-white'>
             <h1 className=' lg:text-lg 2xl:text-xl font-burtons'><a href="#projects" className='scroll-smooth'>Projects</a>&emsp;|&emsp;<a href="">Blog</a></h1>
             <ul className='flex items-center'>
               <li>
                 { darkMode ?
-                  <BsSunFill className='cursor-pointer xl:text-xl 2xl:text-2xl' onClick={() => setDarkMode(!darkMode)}/> :
-                  <BsFillMoonStarsFill className='cursor-pointer xl:text-xl 2xl:text-2xl' onClick={() => setDarkMode(!darkMode)}/> 
+                  <BsSunFill className='cursor-pointer md:text-2xl ' onClick={() => setDarkMode(!darkMode)}/> :
+                  <BsFillMoonStarsFill className='cursor-pointer md:text-2xl ' onClick={() => setDarkMode(!darkMode)}/> 
                 }
               </li>
               <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href={'/resume/TarikOzturk-Resume.pdf'} download>Resume</a></li>
@@ -53,22 +68,22 @@ export default function Home() {
                   Tarik 
                 </span>
                 <span
-                  className="{`${styles.cursor} absolute -bottom-0 left-0 -top-1 inline-block bg-slate-200 dark:bg-gray-900 w-full animate-type will-change`}"
+                  className="{`${styles.cursor} absolute -bottom-0 left-0 -top-1 inline-block bg-blue-100 dark:bg-gray-900 w-full animate-type will-change`}"
                 ></span>
               </span>
             </h1>
 
           </div>
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full relative overflow-hidden my-4 w-64 h-64  xl:w-72 xl:h-72 2xl:w-80 2xl:h-80">
-              <Image src={tarikPic} layout="fill" objectFit="cover" />
+              <Image alt='' src={tarikPic} layout="fill" objectFit="cover" />
             </div>
           <p className=' lg:text-xl text-lg mb-4 py-2 leading-8 text-center dark:text-gray-100 font-burtons'>Software Developer</p>
           <div className=' text-3xl xl:text-4xl 2xl:text-5xl flex justify-center my-4 gap-16 text-gray-600 dark:text-gray-400'>
-          <a href="https://twitter.com/tarikozturk017" target={'_blank'}><AiFillTwitterCircle /></a>
+          <a href="https://twitter.com/tarikozturkk" target={'_blank'}><AiFillTwitterCircle /></a>
             <a href="https://www.linkedin.com/in/tarik-ozturk-28b050159/" target={'_blank'}><AiFillLinkedin /></a>
             <a href="https://github.com/tarikozturk017" target={'_blank'}><AiFillGithub /></a> 
           </div>
-            <p className=' text-center mt-2 xl:mt-4 py-5 leading-8 text-gray-800 text-md 2xl:text-xl max-w-7xl mx-auto dark:text-gray-200'>I am a developer with a passion for creating efficient solutions to complex problems. 
+            <p className=' text-center mt-2 xl:mt-4 py-5 leading-8 text-gray-800 text-sm md:text-lg 2xl:text-xl max-w-7xl mx-auto dark:text-gray-200'>I am a developer with a passion for creating efficient solutions to complex problems. 
               My interest in solving problems developed through life science while studying for my B.S. in 
               Physiotherapy and Rehabilitation. Then I started learning programming as a hobby, which led a 
               career change. I am currently studying Computer Programming at Seneca College in Toronto. During 
@@ -81,7 +96,7 @@ export default function Home() {
         
         <section id='projects'>
           <div className='text-center'>
-            <h3 className=' md:text-4xl lg:5xl mb-8 py-1 dark:text-white'>Projects</h3>
+            <h3 className='text-2xl md:text-4xl lg:5xl mb-8 py-1 dark:text-white'>Projects</h3>
             <p className='text-xl  py-2 leading-8 text-gray-400 font-burtons'>
               Hover over images to play demo
             </p>
@@ -93,84 +108,24 @@ export default function Home() {
         <section>
           <div className=' text-center'>
         <button 
-            className=' cursor-pointer bg-gradient-to-r text-md from-cyan-500 to-teal-500 text-white px-6 py-2 my-8 rounded-md '
+            className=' w-48 cursor-pointer bg-gradient-to-r text-md from-cyan-500 to-teal-500 text-white px-6 py-2 my-8 rounded-t-xl rounded-b-3xl '
             onClick={() => {setExpendList(!expendList)}}
           >{!expendList ? "Click To See Listed Style (All Projects)" : "Click To See Sliding Style"} </button>
           </div>
         {/* // <Carousel> */}
         { !expendList ?
-        <Carousel className  slidesToShow={1} >
-          <div>          
-            {/* FIRST */}
-            <div className="w-auto xl:flex gap-8">
-            <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
-              {/* <HoverBox static={staticAuctionHub} playGif={auctionHub} />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Consulting</h3>
-              <p className="py-2 dark:text-white">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
-              </p> */}
-              <ProjectDetail project={data[0]}/>
-            
-            </div>
-            <div className="text-center shadow-lg shadow-gray-500 p-8 rounded-xl my-10 flex-1">
-              
-              <ProjectDetail project={data[1]}/>
-            </div>
-            
-          </div>
-            </div>
-              <div>
-                {/* SECOND */}
-              <div className="lg:flex gap-10">
-                <div className="text-center p-8 rounded-xl my-10 shadow-lg shadow-gray-500 flex-1">
-                <ProjectDetail project={data[2]}/>
-                
-              </div>
-            
-            <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
-            <ProjectDetail project={data[3]}/>
-              
-            </div>
-          </div>
-              </div>
-               {/* THIRD */}
-               <div className="lg:flex gap-10">
-              <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
-              <ProjectDetail project={data[4]}/>
-              
-            </div>
-              <div className="text-center shadow-lg p-8 rounded-xl my-10  shadow-gray-500 flex-1">
-              <ProjectDetail project={data[5]}/>
-              
-            </div>
-            
-          </div>
-              
-              {/* FOURTH */}
-              <div>
-               <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-8 rounded-xl my-10  shadow-gray-500 flex-1">
-            <ProjectDetail project={data[6]}/>
-            </div>
-            <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
-            <ProjectDetail project={data[7]}/>
-            
-            </div>
-          </div>
-              </div>
+        <Carousel autoplay autoplayInterval={5000} wrapAround slidesToShow={1} speed={700}>
+                   
+            {carouselContent}
 
-              
-          {/* FIFTH */}
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
-            <ProjectDetail project={data[8]}/>
-              </div>
-              <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
-              <ProjectDetail project={data[9]}/>
-            </div>
-            
-          </div>
+              {/* <div className="lg:flex gap-10">
+                  <div className="text-center p-8 rounded-xl my-10 shadow-lg shadow-gray-500 flex-1">
+                    <ProjectDetail project={data[0]}/>
+                    </div>
+                </div> */}
+
+
+          
           </Carousel>
 
 

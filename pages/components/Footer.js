@@ -18,7 +18,7 @@ return (
         
         }}>
 
-		<div className=" flex flex-col text-left ml-16">
+		<div className=" flex flex-col text-left ">
         <div className="text-2xl text-white mb-10 font-bold ml-0">Contact Me</div>
 			<SendForm />
 		</div>
@@ -27,16 +27,16 @@ return (
 		</Column> */}
 
         <div className=" flex flex-col text-left lg:ml-32 md:ml-24">
-            <div className="text-2xl text-white mb-10 font-bold">About</div>
-			<a className="text-white mb-5 text-lg no-underline hover:text-teal-500 duration-200 cursor-pointer" href="#">Blogs</a>
-			<a className="text-white mb-5 text-lg no-underline hover:text-teal-500 duration-200 cursor-pointer" href="#">Courses | Certificate</a>
-			<a className="text-white mb-5 text-lg no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://clubs.ssfinc.ca/ssdc/home/" target={'_blank'}>Seneca Software Developers Club</a>
-			<a className="text-white mb-5 text-lg no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://github.com/tarikozturk017/SLG-practices" target={'_blank'}>SLG Workshops</a>
+            <div className="sm:text-2xl text-xl text-white mb-10 font-bold">About</div>
+			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="#">Blogs</a>
+			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="#">Courses | Certificate</a>
+			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://clubs.ssfinc.ca/ssdc/home/" target={'_blank'}>Seneca Software Developers Club</a>
+			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://github.com/tarikozturk017/SLG-practices" target={'_blank'}>SLG Workshops</a>
 		</div>
 
 		<div className=" flex flex-col text-left ">
-        <div className="text-2xl text-white mb-10 font-bold">Social</div>
-            <a className="flex mb-5 text-white text-lg no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://github.com/tarikozturk017" target={'_blank'}>
+        <div className=" sm:text-2xl text-xl text-white mb-10 font-bold">Social</div>
+            <a className="flex mb-5 text-white sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://github.com/tarikozturk017" target={'_blank'}>
             <div className=" flex  items-center ">
                 <AiFillGithub />
 				<span className=" ml-3" >
@@ -44,7 +44,7 @@ return (
 				</span>
 			</div>
             </a>
-            <a className="flex mb-5 text-white text-lg no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://www.linkedin.com/in/tarik-ozturk-28b050159/" target={'_blank'} >
+            <a className="flex mb-5 text-white sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://www.linkedin.com/in/tarik-ozturk-28b050159/" target={'_blank'} >
 			<div className=" flex items-center">
                 <AiFillLinkedin />
 				<span className=" ml-3" >
@@ -52,7 +52,7 @@ return (
 				</span>
 			</div>
             </a>
-			<a className="text-white  mb-5 text-lg no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://twitter.com/tarikozturk017" target={'_blank'}>
+			<a className="text-white  mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://twitter.com/tarikozturkk" target={'_blank'}>
             <div className="flex items-center">
                 <AiFillTwitterCircle />
 				<span className=" ml-3" >
