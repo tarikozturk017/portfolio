@@ -13,7 +13,7 @@ import tarikPic from "../public/tarik-pic.png"
 import projectData from "../helper/data"
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [expendList, setExpendList] = useState(false);
 
   let data = projectData;
@@ -27,48 +27,48 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=' pb-36 bg-slate-100 px-10 md:px-20 lg:40 dark:bg-gray-900'>
+      <main className=' pb-36 bg-slate-200 px-8 lg:px-20 2xl:px-32 dark:bg-gray-900'>
         <section className='min-h-screen'>
-          <nav className='py-10 mb-4 flex justify-between dark:text-white'>
-            <h1 className=' text-xl font-burtons'><a href="#projects" className='scroll-smooth'>Projects</a>&emsp;|&emsp;<a href="">Blog</a></h1>
+          <nav className='py-8 mb-4 flex justify-between dark:text-white'>
+            <h1 className=' lg:text-lg 2xl:text-xl font-burtons'><a href="#projects" className='scroll-smooth'>Projects</a>&emsp;|&emsp;<a href="">Blog</a></h1>
             <ul className='flex items-center'>
               <li>
                 { darkMode ?
-                  <BsSunFill className='cursor-pointer text-2xl' onClick={() => setDarkMode(!darkMode)}/> :
-                  <BsFillMoonStarsFill className='cursor-pointer text-2xl' onClick={() => setDarkMode(!darkMode)}/> 
+                  <BsSunFill className='cursor-pointer xl:text-xl 2xl:text-2xl' onClick={() => setDarkMode(!darkMode)}/> :
+                  <BsFillMoonStarsFill className='cursor-pointer xl:text-xl 2xl:text-2xl' onClick={() => setDarkMode(!darkMode)}/> 
                 }
               </li>
               <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href={'/resume/TarikOzturk-Resume.pdf'} download>Resume</a></li>
             </ul>
           </nav>
-          <div className='text-center p-10'>
+          <div className='text-center lg:p-5 2xl:p-10'>
             {/* <h3 className='text-4xl py-2 md:text-5xl dark:text-white'>Hi, I am</h3> */}
             {/* <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tarik Ozturk</h2> */}
             {/* <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer </h3> */}
 
-            <h1 className="mb-1 font-mono text-2xl dark:text-white md:text-4xl lg:5xl">
+            <h1 className="mb-1 font-mono dark:text-white text-2xl xl:text-3xl 2xl:text-4xl">
               Hi, I&apos;m <br className="block md:hidden" />
               <span className="relative">
-                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent font-bold dark:text-teal-400 text-teal-600  md:text-4xl lg:5xl ">
-                  Tarik <span className="text-3xl md:text-4xl lg:5xl">👋</span>
+                <span className="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent font-bold dark:text-teal-400 text-teal-600  text-2xl xl:text-3xl 2xl:text-4xl ">
+                  Tarik 
                 </span>
                 <span
-                  className="{`${styles.cursor} absolute -bottom-0 left-0 -top-1 inline-block bg-slate-100 dark:bg-gray-900 w-full animate-type will-change`}"
+                  className="{`${styles.cursor} absolute -bottom-0 left-0 -top-1 inline-block bg-slate-200 dark:bg-gray-900 w-full animate-type will-change`}"
                 ></span>
               </span>
             </h1>
 
           </div>
-          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden my-4 md:h-84 md:w-84">
+          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full relative overflow-hidden my-4 w-64 h-64  xl:w-72 xl:h-72 2xl:w-80 2xl:h-80">
               <Image src={tarikPic} layout="fill" objectFit="cover" />
             </div>
-          <p className='lg:text-xl text-lg mb-4 py-2 leading-8 text-center dark:text-gray-100 font-burtons'>Software Developer</p>
-          <div className='text-5xl flex justify-center my-1 gap-16 text-gray-600 dark:text-gray-400'>
+          <p className=' lg:text-xl text-lg mb-4 py-2 leading-8 text-center dark:text-gray-100 font-burtons'>Software Developer</p>
+          <div className=' text-3xl xl:text-4xl 2xl:text-5xl flex justify-center my-4 gap-16 text-gray-600 dark:text-gray-400'>
           <a href="https://twitter.com/tarikozturk017" target={'_blank'}><AiFillTwitterCircle /></a>
             <a href="https://www.linkedin.com/in/tarik-ozturk-28b050159/" target={'_blank'}><AiFillLinkedin /></a>
             <a href="https://github.com/tarikozturk017" target={'_blank'}><AiFillGithub /></a> 
           </div>
-            <p className=' text-center text-md mt-4 py-5 leading-8 text-gray-800 md:text-xl max-w-7xl mx-auto dark:text-gray-200'>I am a developer with a passion for creating efficient solutions to complex problems. 
+            <p className=' text-center mt-2 xl:mt-4 py-5 leading-8 text-gray-800 text-md 2xl:text-xl max-w-7xl mx-auto dark:text-gray-200'>I am a developer with a passion for creating efficient solutions to complex problems. 
               My interest in solving problems developed through life science while studying for my B.S. in 
               Physiotherapy and Rehabilitation. Then I started learning programming as a hobby, which led a 
               career change. I am currently studying Computer Programming at Seneca College in Toronto. During 
@@ -93,17 +93,17 @@ export default function Home() {
         <section>
           <div className=' text-center'>
         <button 
-            className=' cursor-pointer bg-gradient-to-r text-mg from-cyan-500 to-teal-500 text-white px-6 py-2 my-8 rounded-md '
+            className=' cursor-pointer bg-gradient-to-r text-md from-cyan-500 to-teal-500 text-white px-6 py-2 my-8 rounded-md '
             onClick={() => {setExpendList(!expendList)}}
           >{!expendList ? "Click To See Listed Style (All Projects)" : "Click To See Sliding Style"} </button>
           </div>
         {/* // <Carousel> */}
         { !expendList ?
-        <Carousel className wrapAround={true} slidesToShow={1} >
+        <Carousel className  slidesToShow={1} >
           <div>          
             {/* FIRST */}
-            <div className="w-auto lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
+            <div className="w-auto xl:flex gap-8">
+            <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
               {/* <HoverBox static={staticAuctionHub} playGif={auctionHub} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Consulting</h3>
               <p className="py-2 dark:text-white">
@@ -113,7 +113,7 @@ export default function Home() {
               <ProjectDetail project={data[0]}/>
             
             </div>
-            <div className="text-center shadow-lg shadow-gray-500 p-10 rounded-xl my-10   flex-1">
+            <div className="text-center shadow-lg shadow-gray-500 p-8 rounded-xl my-10 flex-1">
               
               <ProjectDetail project={data[1]}/>
             </div>
@@ -123,12 +123,12 @@ export default function Home() {
               <div>
                 {/* SECOND */}
               <div className="lg:flex gap-10">
-                <div className="text-center p-10 rounded-xl my-10 shadow-lg shadow-gray-500 flex-1">
+                <div className="text-center p-8 rounded-xl my-10 shadow-lg shadow-gray-500 flex-1">
                 <ProjectDetail project={data[2]}/>
                 
               </div>
             
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
+            <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
             <ProjectDetail project={data[3]}/>
               
             </div>
@@ -136,11 +136,11 @@ export default function Home() {
               </div>
                {/* THIRD */}
                <div className="lg:flex gap-10">
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
+              <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
               <ProjectDetail project={data[4]}/>
               
             </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10  shadow-gray-500 flex-1">
+              <div className="text-center shadow-lg p-8 rounded-xl my-10  shadow-gray-500 flex-1">
               <ProjectDetail project={data[5]}/>
               
             </div>
@@ -150,10 +150,10 @@ export default function Home() {
               {/* FOURTH */}
               <div>
                <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  shadow-gray-500 flex-1">
+            <div className="text-center shadow-lg p-8 rounded-xl my-10  shadow-gray-500 flex-1">
             <ProjectDetail project={data[6]}/>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
+            <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
             <ProjectDetail project={data[7]}/>
             
             </div>
@@ -163,10 +163,10 @@ export default function Home() {
               
           {/* FIFTH */}
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
+            <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
             <ProjectDetail project={data[8]}/>
               </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 shadow-gray-500 flex-1">
+              <div className="text-center shadow-lg p-8 rounded-xl my-10 shadow-gray-500 flex-1">
               <ProjectDetail project={data[9]}/>
             </div>
             

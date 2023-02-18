@@ -13,7 +13,7 @@ const ProjectDetail = (props) => {
             <ul className=" justify-between flex px-16 my-4 mt-12 dark:text-gray-200">
                 {props.project.technologies.map((technology) => {
                     return (
-                        <li className=" bg-slate-500 text-white font-bold py-2 px-4 rounded-3xl opacity-70 cursor-not-allowed">
+                        <li className=" bg-slate-500 text-white font-bold p-2 rounded-3xl opacity-70 cursor-not-allowed">
                             {technology}
                         </li>
                     )
