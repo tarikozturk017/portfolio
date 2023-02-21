@@ -30,7 +30,7 @@ const ProjectDetail = (props) => {
             <p className="py-2 text-sm md:text-lg 2xl:text-xl dark:text-gray-200">
             {props.project.description}
             </p>
-            <p className=" dark:text-gray-200 text-sm md:text-lg 2xl:text-xl">Live app: <a href="" target={'_blank'}></a></p>
+            {/* <p className=" dark:text-gray-200 text-sm md:text-lg 2xl:text-xl">Live app: <a href="" target={'_blank'}></a></p> */}
         </>
     
      : <></>

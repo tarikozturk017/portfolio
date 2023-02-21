@@ -23,8 +23,8 @@ export default function Home() {
     if (index < 10) {
     return (
         
-        <div key={index} className="lg:flex gap-10">
-          <div className="text-center shadow-lg p-8 max-w-4xl  rounded-xl my-10 mx-auto shadow-gray-500 flex-1">
+        <div key={index} className="lg:flex gap-10 mx-3">
+          <div className="text-center shadow-lg p-8 max-w-4xl rounded-xl my-10 mx-auto shadow-gray-500 flex-1">
             <ProjectDetail project={project}/>
             </div>
         </div>
@@ -97,9 +97,9 @@ export default function Home() {
         <section id='projects'>
           <div className='text-center'>
             <h3 className='text-2xl md:text-4xl lg:5xl mb-8 py-1 dark:text-white'>Projects</h3>
-            <p className='text-xl  py-2 leading-8 text-gray-400 font-burtons'>
+            {/* <p className='text-xl  py-2 leading-8 text-gray-400 font-burtons'>
               Hover over images to play demo
-            </p>
+            </p> */}
           </div>
           <div>
 
@@ -114,18 +114,34 @@ export default function Home() {
           </div>
         {/* // <Carousel> */}
         { !expendList ?
-        <Carousel autoplay autoplayInterval={5000} wrapAround slidesToShow={1} speed={700}>
-                   
+        <Carousel 
+          // autoplay autoplayInterval={5000} 
+          wrapAround slidesToShow={1} speed={700}
+          defaultControlsConfig={{
+            nextButtonText: '>',
+            prevButtonText: '<',
+            pagingDotsStyle: {
+              tabSize: 48,
+              fill: '#06b6d4'
+            },
+            prevButtonStyle:{
+              color: '#06b6d4',
+              fontWeight: 'bolder',
+              backgroundColor: 'transparent',
+              fontSize: '3rem',
+              opacity: '0.9',
+            },
+            nextButtonStyle: {
+              color: '#06b6d4',
+              fontWeight: 'bolder',
+              backgroundColor: 'transparent',
+              fontSize: '3rem',
+              opacity: '0.9',
+              
+            }
+          }}
+          >
             {carouselContent}
-
-              {/* <div className="lg:flex gap-10">
-                  <div className="text-center p-8 rounded-xl my-10 shadow-lg shadow-gray-500 flex-1">
-                    <ProjectDetail project={data[0]}/>
-                    </div>
-                </div> */}
-
-
-          
           </Carousel>
 
 
