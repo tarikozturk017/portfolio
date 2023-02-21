@@ -8,7 +8,9 @@ const ProjectDetail = (props) => {
     const content = typeof p !== 'undefined' ? 
         <>
             <div className=" block">
+                <a href={props.project.url} target={"_blank"}>
                 <HoverBox static={props.project.images.static} playGif={props.project.images.dynamic} />
+                </a>
             </div>
             {props.project.technologies[1] ? 
             

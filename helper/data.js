@@ -30,7 +30,10 @@ const projectData = [
         "images": {
             "static": staticAuctionHub,
             "dynamic": auctionHub            
-        }
+        },
+        "url": "",
+        "hasLiveApp": false,
+        "github": "https://github.com/tarikozturk017/ecommerce-django"
     },
     {
         "name":"Reasype | Smart Recipe Generator",
@@ -39,7 +42,10 @@ const projectData = [
         "images": {
             "static": staticReasype,
             "dynamic": reasype            
-        }
+        },
+        "url": "",
+        "hasLiveApp": false,
+        "github": "https://github.com/tarikozturk017/Reasype"
     },
     {
         "name":"PlanetBlue | Shooting Game With Web Application",
@@ -48,7 +54,10 @@ const projectData = [
         "images": {
             "static": planetBlue,
             "dynamic": planetBlueGif,            
-        }
+        },
+        "url": "https://www.youtube.com/watch?v=RDA1-YnVWiU&t=6s&ab_channel=TarikOZTURK",
+        "hasLiveApp": false,
+        "github": "https://github.com/tarikozturk017/PlanetBlue-Browser-shooting-game"
     },
     {
         "name":"Trivia | Quiz Game",
@@ -57,7 +66,10 @@ const projectData = [
         "images": {
             "static": trivia,
             "dynamic": triviaGif,            
-        }
+        },
+        "url": "https://tarikozturk017.github.io/trivia--react/",
+        "hasLiveApp": true,
+        "github": "https://github.com/tarikozturk017/trivia--react"
     },
     {
         "name":"Speed Typing Game",
@@ -66,7 +78,10 @@ const projectData = [
         "images": {
             "static": speedTyping,
             "dynamic": speedTypingGif,            
-        }
+        },
+        "url": "https://tarikozturk017.github.io/speed-typing-game--react/",
+        "hasLiveApp": true,
+        "github": "https://github.com/tarikozturk017/speed-typing-game--react"
     },
     {
         "name":"Meme Generator",
@@ -75,7 +90,10 @@ const projectData = [
         "images": {
             "static": memeGenerator,
             "dynamic": memeGeneratorGif,            
-        }
+        },
+        "url": "https://tarikozturk017.github.io/meme-generator--react/",
+        "hasLiveApp": true,
+        "github": "https://github.com/tarikozturk017/meme-generator--react"
     },
     {
         "name":"Tenzies",
@@ -84,7 +102,10 @@ const projectData = [
         "images": {
             "static": tenzies,
             "dynamic": tenziesGif,            
-        }
+        },
+        "url": "https://tarikozturk017.github.io/tenzies--react/",
+        "hasLiveApp": true,
+        "github": "https://github.com/tarikozturk017/tenzies--react"
     },
     {
         "name":"Pomodoro Clock",
@@ -93,7 +114,10 @@ const projectData = [
         "images": {
             "static": pomodoro,
             "dynamic": pomodoroGif,            
-        }
+        },
+        "url": "https://tarikozturk017.github.io/25-5-clock/",
+        "hasLiveApp": true,
+        "github": "https://github.com/tarikozturk017/25-5-clock"
     },
     {
         "name":"Random Quote Generator",
@@ -102,7 +126,10 @@ const projectData = [
         "images": {
             "static": quoteGenerator,
             "dynamic": quoteGeneratorGif,            
-        }
+        },
+        "url": "https://tarikozturk017.github.io/Random-quote-machine--react/",
+        "hasLiveApp": true,
+        "github": "https://github.com/tarikozturk017/Random-quote-machine--react"
     },
     {
         "name":"Calculator",
@@ -111,7 +138,10 @@ const projectData = [
         "images": {
             "static": calculator,
             "dynamic": calculatorGif,            
-        }
+        },
+        "url": "https://tarikozturk017.github.io/js-calculator/",
+        "hasLiveApp": true,
+        "github": "https://github.com/tarikozturk017/js-calculator"
     },
 
     {
@@ -121,7 +151,10 @@ const projectData = [
         "images": {
             "static": code,
             "dynamic": code,            
-        }
+        },
+        "url": "",
+        "hasLiveApp": false,
+        "github": "https://github.com/tarikozturk017/Aid-Management-System"
     },
     {
         "name":"Employee Management System",
@@ -130,7 +163,10 @@ const projectData = [
         "images": {
             "static": code,
             "dynamic": code,            
-        }
+        },
+        "url": "",
+        "hasLiveApp": false,
+        "github": "https://github.com/tarikozturk017/Database-Project"
     },
     {
         "name":"Account Ticketing System",
@@ -139,7 +175,10 @@ const projectData = [
         "images": {
             "static": code,
             "dynamic": code,            
-        }
+        },
+        "url": "",
+        "hasLiveApp": false,
+        "github": "https://github.com/tarikozturk017/Account-Ticketing-System/tree/main/account%20ticketing%20system"
     },
     {
         "name":"Assembly Workstation",
@@ -148,7 +187,10 @@ const projectData = [
         "images": {
             "static": code,
             "dynamic": code,            
-        }
+        },
+        "url": "",
+        "hasLiveApp": false,
+        "github": "https://github.com/tarikozturk017/assembly-workstation/tree/main/ms33"
     },
     {
         "name":"School Database Management System",
@@ -157,7 +199,10 @@ const projectData = [
         "images": {
             "static": code,
             "dynamic": code,            
-        }
+        },
+        "url": "",
+        "hasLiveApp": false,
+        "github": "https://github.com/tarikozturk017/school-db-system"
     },
 ];
 
