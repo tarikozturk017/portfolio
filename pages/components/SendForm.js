@@ -5,6 +5,7 @@ import { GiCancel } from 'react-icons/gi'
 
 const SendForm = () => {
   const [show, setShow] = useState(false);
+  const [failShow, setFailShow] = useState(false);
   const [email, setEmail ] = useState({
     user_name:'',
     user_contact: '',
@@ -27,16 +28,28 @@ const SendForm = () => {
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
-        }).then(setShow(true)).then(setEmail({
+        }).then(setFailShow(false)).then(setShow(true)).then(setEmail({
           user_name:'',
           user_contact: '',
           message: ''
         }));
       }
+      else {
+        setFailShow(true);
+        setShow(false);
+      }
   };
 
   return (
     <>
+    { failShow && <Alert variant="success" className=' bg-gradient-to-r from-red-300 to-rose-300 rounded-xl px-5 pt-0 pb-5' 
+     dismissible>
+        <GiCancel className=' float-right mt-2 text-lg cursor-pointer' onClick={() => setFailShow(false)}/>
+        <Alert.Heading className=' font-burtons under '>Invalid Input!</Alert.Heading>
+        <p>
+          Please fill out the Name, Contact & Message boxes. 
+        </p>
+    </Alert>}
     { show && <Alert variant="success" className=' bg-gradient-to-r from-cyan-200 to-teal-200 rounded-xl px-5 pt-0 pb-5' 
      dismissible>
         <GiCancel className=' float-right mt-2 text-lg cursor-pointer' onClick={() => setShow(false)}/>
