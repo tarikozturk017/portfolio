@@ -1,7 +1,7 @@
 import React from "react";
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import SendForm from "./SendForm";
-
+ 
 const Footer = () => {
 return (
 	<div id="box" className=" p-12 bg-black  bottom-0 w-full clear-both absolute" style={{ 
