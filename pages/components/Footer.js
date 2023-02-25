@@ -28,7 +28,7 @@ return (
 
         <div className=" flex flex-col text-left lg:ml-32 md:ml-24">
             <div className="sm:text-2xl text-xl text-white mb-10 font-bold">About</div>
-			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="#">Blogs</a>
+			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://tozturk.hashnode.dev/" target={'_blank'}>Blogs</a>
 			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="#">Courses | Certificate</a>
 			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://clubs.ssfinc.ca/ssdc/home/" target={'_blank'}>Seneca Software Developers Club</a>
 			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://github.com/tarikozturk017/SLG-practices" target={'_blank'}>SLG Workshops</a>

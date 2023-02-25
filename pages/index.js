@@ -45,7 +45,7 @@ export default function Home() {
       <main className=' pb-12 md:pb-24 xl:pb-36 bg-blue-100 px-8 lg:px-20 2xl:px-32 dark:bg-gray-900'>
         <section className='min-h-screen'>
           <nav className='py-8 mb-4 flex justify-between dark:text-white'>
-            <h1 className=' lg:text-lg 2xl:text-xl font-burtons'><a href="#projects" className='scroll-smooth'>Projects</a>&emsp;|&emsp;<a href="">Blog</a></h1>
+            <h1 className=' lg:text-lg 2xl:text-xl font-burtons'><a href="#projects" className='scroll-smooth'>Projects</a>&emsp;|&emsp;<a href="https://tozturk.hashnode.dev/" target={'_blank'}>Blogs</a></h1>
             <ul className='flex items-center'>
               <li>
                 { darkMode ?

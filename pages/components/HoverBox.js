@@ -1,12 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import {isMobile} from 'react-device-detect';
 import Image from 'next/image';
 
+// const [width, setWidth] = useState<number>(window.innerWidth);
+
+// function handleWindowSizeChange() {
+//     setWidth(window.innerWidth);
+// }
+// useEffect(() => {
+//     window.addEventListener('resize', handleWindowSizeChange);
+//     return () => {
+//         window.removeEventListener('resize', handleWindowSizeChange);
+//     }
+// }, []);
+
+// const isMobile = width <= 768;
 
 function HoverBox(props) {
-  const [isShown, setIsShown] = useState(false);
+  const [isShown, setIsShown] = useState(isMobile);
 
 //   let img = isShown ? reasype : staticReasype
-  let img = isShown ? props.playGif : props.static
+  
+  let img = isShown  ? props.playGif : props.static 
+  
+ 
+
   return (
     <div className="App">
       <button
