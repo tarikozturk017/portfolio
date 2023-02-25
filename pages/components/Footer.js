@@ -2,8 +2,18 @@ import React from "react";
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import SendForm from "./SendForm";
  
-const Footer = () => {
-return (
+const Footer = ( { setShowCert } ) => {
+
+	const scrollToTop = () =>{
+        window.scrollTo({
+          top: 0, 
+          behavior: 'smooth'
+          /* you can also use 'auto' behaviour
+             in place of 'smooth' */
+        });
+      };
+
+	return (
 	<div id="box" className=" p-12 bg-black  bottom-0 w-full clear-both absolute" style={{ 
         clear: "both",
         position: "relative",
@@ -29,7 +39,14 @@ return (
         <div className=" flex flex-col text-left lg:ml-32 md:ml-24">
             <div className="sm:text-2xl text-xl text-white mb-10 font-bold">About</div>
 			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://tozturk.hashnode.dev/" target={'_blank'}>Blogs</a>
-			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="#">Courses | Certificate</a>
+			<div className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" 
+				onClick={() => {
+					scrollToTop()
+					// console.log('scrol')
+					setShowCert(true)
+				}}>
+				Awards | Certificates
+			</div>
 			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://clubs.ssfinc.ca/ssdc/home/" target={'_blank'}>Seneca Software Developers Club</a>
 			<a className="text-white mb-5 sm:text-lg text-base no-underline hover:text-teal-500 duration-200 cursor-pointer" href="https://github.com/tarikozturk017/SLG-practices" target={'_blank'}>SLG Workshops</a>
 		</div>
