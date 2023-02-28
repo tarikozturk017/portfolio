@@ -43,8 +43,8 @@ const projectData = [
             "static": staticReasype,
             "dynamic": reasype            
         },
-        "url": "",
-        "hasLiveApp": false,
+        "url": "https://reasype.vercel.app/",
+        "hasLiveApp": true,
         "github": "https://github.com/tarikozturk017/Reasype"
     },
     {
