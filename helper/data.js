@@ -31,8 +31,8 @@ const projectData = [
             "static": staticAuctionHub,
             "dynamic": auctionHub            
         },
-        "url": "",
-        "hasLiveApp": false,
+        "url": "https://auctionhub-app.onrender.com/",
+        "hasLiveApp": true,
         "github": "https://github.com/tarikozturk017/ecommerce-django"
     },
     {
