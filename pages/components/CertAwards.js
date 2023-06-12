@@ -10,6 +10,7 @@ import pic6 from "../../public/6.png"
 import pic7 from "../../public/7.png"
 import pic8 from "../../public/8.png"
 
+import a0 from "../../public/a0.png"
 import a1 from "../../public/a1.png"
 import a2 from "../../public/a2.png"
 import a3 from "../../public/a3.png"
@@ -19,7 +20,7 @@ import a6 from "../../public/a6.png"
 
 const CertAwards = ({ setShowCert }) =>{
     const certs = [pic1, pic2, pic3, pic4 , pic5 , pic6 , pic7, pic8];
-    const awrs = [a1, a2, a3, a4, a5, a6]
+    const awrs = [a0, a1, a2, a3, a4, a5, a6]
     
     const awards = awrs.map((pic) => {
         return (
