@@ -78,7 +78,7 @@ export default function Home() {
             <p className=' text-center text-md mt-10 py-5 leading-8 text-gray-800 md:text-xl max-w-7xl mx-auto dark:text-gray-200'>I am a developer with a passion for creating efficient solutions to complex problems. 
               My interest in solving problems developed through life science while studying for my B.S. in 
               Physiotherapy and Rehabilitation. Then I started learning programming as a hobby, which led a 
-              career change. I am currently studying Computer Programming at Seneca College in Toronto. During 
+              career change. I've a recent Computer Programming grad from Seneca College in Toronto. During 
               my study, I focused on data structures and algorithms, object oriented programming, database management, 
               backend and frontend web development, software analysis and design. I wish to continue working with 
               passionate teams of talented developers to create technology that benefits its users by improving their 
