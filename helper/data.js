@@ -24,7 +24,7 @@ import code from "../public/code.jpeg";
 
 const projectData = [
   {
-    name: "AuctionHub | Online Auction/Shopping Web Application",
+    name: "Curiee | Physiotherapy Patient Management Platform",
     technologies: [
       "javascript",
       "React.js",
