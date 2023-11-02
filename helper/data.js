@@ -24,7 +24,7 @@ import code from "../public/code.jpeg";
 
 const projectData = [
   {
-    name: "Curiee | Physiotherapy Patient Management Platform",
+    name: "Curiee | Treatment Management Software",
     technologies: [
       "javascript",
       "React.js",
