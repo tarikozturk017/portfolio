@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net" modified="2024-06-06T19:22:21.185Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="RPwLB96hlKZAXLKnbXv6" version="24.3.1" type="github">
+  <diagram name="Page-1" id="_fWlYoRwfRECkoH8k7O3">
+    <mxGraphModel dx="2284" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s0_zDiM003AszU_V--n6-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0_zDiM003AszU_V--n6-1" target="s0_zDiM003AszU_V--n6-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-1" value="start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-6.25" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0_zDiM003AszU_V--n6-2" target="s0_zDiM003AszU_V--n6-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-2" value="trigger &#39;Locate/blink&#39; button to send request backend&amp;nbsp;&lt;div&gt;e.g. {&lt;/div&gt;&lt;div&gt;&#39;status&#39;: running,&lt;/div&gt;&lt;div&gt;&#39;currentPortId&#39;: 1&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-71.25" y="160" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0_zDiM003AszU_V--n6-4" target="s0_zDiM003AszU_V--n6-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-4" value="return response with success and current portId" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-23.75" y="280" width="155" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0_zDiM003AszU_V--n6-14" target="s0_zDiM003AszU_V--n6-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0_zDiM003AszU_V--n6-14" target="s0_zDiM003AszU_V--n6-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0_zDiM003AszU_V--n6-16" target="s0_zDiM003AszU_V--n6-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-16" value="set currentPortId to next miner&#39;s port id and return success to clientside" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="293.75" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-19" value="&lt;b&gt;Note: &lt;/b&gt;This will help the keep track the status of the blink/locate feature, and the current port id to send request" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="183.75" y="160" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-30" value="true" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="233.75" y="650" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0_zDiM003AszU_V--n6-33" target="s0_zDiM003AszU_V--n6-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0_zDiM003AszU_V--n6-33" target="s0_zDiM003AszU_V--n6-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-33" value="is Unauthorized?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-16.25" y="630" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-35" value="Return unauthorized response and handle the same way as sending blink request manually to individual miner" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-206.25" y="635" width="135" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-37" value="true" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-71.25" y="640" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-39" value="Some other error, return error and toast. Set status to stopped and currentPortId to portId." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-33.75" y="800" width="125" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-41" value="&lt;b&gt;Note: &lt;/b&gt;After unauth, the login miner credentials modal pops up and after submission, the rest of the process is the same as sending request to blink." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-223.75" y="555" width="190" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0_zDiM003AszU_V--n6-42" target="s0_zDiM003AszU_V--n6-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-42" value="the &#39;assign&#39; buttons within each cell in the &#39;Map Configuration&#39; tab will be enabled" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-44" value="user clicks to &#39;assign&#39; for specific port and it&#39;ll assign the blinking miner to the cell just like assigning the port manually." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="630" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-48" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="370" width="1030" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-26" value="Toast error &amp;amp; set status: stopped, and portId: currentId" style="whiteSpace=wrap;html=1;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="70" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-23" value="is response success?&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="253.75" y="60" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="s0_zDiM003AszU_V--n6-48" source="s0_zDiM003AszU_V--n6-23" target="s0_zDiM003AszU_V--n6-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-28" value="false" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="210" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-29" value="true" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="320" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="s0_zDiM003AszU_V--n6-48" source="s0_zDiM003AszU_V--n6-22" target="s0_zDiM003AszU_V--n6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-22" value="send blink request to port with portId (no manual trigger needed, can be send if the response is successful)" style="whiteSpace=wrap;html=1;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="390" y="65" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="s0_zDiM003AszU_V--n6-48" source="s0_zDiM003AszU_V--n6-23" target="s0_zDiM003AszU_V--n6-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-9" value="backend server makes a request to miner&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="392.5" y="160" width="155" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-14" value="is miner returns success&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="400" y="270" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="s0_zDiM003AszU_V--n6-48" source="s0_zDiM003AszU_V--n6-9" target="s0_zDiM003AszU_V--n6-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-38" value="false" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="332.5" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="s0_zDiM003AszU_V--n6-48" source="s0_zDiM003AszU_V--n6-46" target="s0_zDiM003AszU_V--n6-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-46" value="Save the updated configurations" style="whiteSpace=wrap;html=1;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="870" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="s0_zDiM003AszU_V--n6-48" source="s0_zDiM003AszU_V--n6-54" target="s0_zDiM003AszU_V--n6-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="s0_zDiM003AszU_V--n6-48" source="s0_zDiM003AszU_V--n6-54" target="s0_zDiM003AszU_V--n6-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-54" value="Is all miners completed?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="870" y="50" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-61" value="set &#39;status&#39;: stopped, currentId to first miner&#39;s portId" style="whiteSpace=wrap;html=1;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="870" y="-95" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-63" value="false" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="820" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-64" value="true" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="s0_zDiM003AszU_V--n6-48">
+          <mxGeometry x="920" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-52" value="Iterate all the miners" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=default;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="450" y="340" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.583;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="s0_zDiM003AszU_V--n6-44" target="s0_zDiM003AszU_V--n6-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-65" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="125" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0_zDiM003AszU_V--n6-61" target="s0_zDiM003AszU_V--n6-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0_zDiM003AszU_V--n6-67" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Notes&lt;/h1&gt;&lt;p&gt;1) In the &#39;Map Configuration&#39; page, the status will be fetched in an interval, and when the first loaded so we&#39;ll know if the process started. If started, we&#39;ll know which port is blinking.&lt;/p&gt;&lt;p&gt;2) More error handling added on some steps, I just write the ones that I feel important.&lt;/p&gt;&lt;p&gt;3) I&#39;ll add restart button which will reset the &#39;currentPortId&#39;. Also, if the user close the window, it will continue from the last one (from &#39;currentPortId&#39;)&lt;/p&gt;&lt;p&gt;4) I&#39;m planning to add skip button, so it&#39;ll set the current port id to the next one&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" width="220" height="390" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
